@@ -267,11 +267,15 @@ a:focus {
   padding: 50px 0;
   color: white;
   background-color: black;
+  background: url(../img/bg.jpg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
+
+
+
 #map {
   width: 100%;
   height: 200px;F
@@ -402,3 +406,28 @@ body {
  #social-em:hover {
      color: #f39c12;
  }
+
+
+.callout_btn{
+    color: #fff;
+    text-decoration: none;
+    border-radius: .307692308em;
+    background: #02b3e4;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    line-height: initial;
+    display: block;
+    text-align: center;
+    padding: 1em .25em;
+    font-weight: 600;
+    font-size: .8125em;
+    max-width: 20em;
+    transition: background .3s ease;
+    text-transform: uppercase;
+}
+
+.callout_btn:active, .callout_btn:hover{
+    color: #fff;
+}
+
