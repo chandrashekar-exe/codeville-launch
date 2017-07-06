@@ -62,6 +62,9 @@
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
+					<li>
+                        <a class="page-scroll" href="#register">Register</a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="#benefits">Benefits</a>
                     </li>
@@ -167,7 +170,8 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About CodeVille</h2>
                 <p>CodeVille is a web platform enlightening young minds on website and app building that is coming soon!</p>
-                <p>Designed exclusively for Bangaloreans, it includes interesting and hands-on modules for website and app development. Latest languages and frameworks like Python, Django, Ionic and others are included as a part of the course.</p>
+                <p>Designed exclusively for Bangaloreans, it includes interesting and hands-on modules for website and app development.
+                   Latest languages and frameworks like Python, Django and Ionic are included as a part of the course.</p>
             </div>
         </div>
     </section>
@@ -202,8 +206,9 @@
 
     <!-- Footer -->
     <footer>
+      <section id="register" class="container content-section text-center">
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
+
             <div class="row">
               <div class="col-md-4 col-md-offset-4" onsubmit="validate()">
                 <form action="" method="post" accept-charset="utf-8" class="form" role="form">{% csrf_token %}
@@ -217,8 +222,29 @@
 
               </div>
 
-            </div>
+            </div><br/>
+            <p>Register soon, limited entries only! Kindly come to our office between 10am to 11am for the payment registration.</p>
         </div>
+      </section>
+
+        <div class="container">
+
+            <hr>
+                <div class="text-center center-block">
+                    <!--<p class="txt-railway">- Bootsnipp.com -</p>-->
+                    <br />
+                      <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+        	            <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+        	            <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+        	            <a href="mailto:sumeru@everycrave.me"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+            <hr>
+        </div>
+        <div class="container text-center">
+          <p>Copyright &copy; Codeville 2017</p>
+        </div>
+
+
     </footer>
 
     <!-- jQuery -->
