@@ -61,9 +61,25 @@ a:focus {
   font-family: "Insomnia";
   src: url("Font/Insomnia/Android Insomnia Regular.ttf") format("truetype");
 }
+
+.card-header {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+  color: white;
+}
 .light {
   font-weight: 400;
 }
+.card {
+  margin: 30px;
+}
+.card-title {
+  margin: 0;
+}
+
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -151,7 +167,7 @@ a:focus {
   font-size: 40px;
   font-family: "My Font"
 }
-.row {
+.container .row .col-md-8 {
   text-align: center;
 }
 .intro .intro-body .intro-text {
@@ -246,11 +262,10 @@ a:focus {
 .content-section {
   padding-top: 50px;
 }
-.download-section {
+#benefits {
   width: 100%;
   padding: 50px 0;
   color: white;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -266,7 +281,7 @@ a:focus {
   .content-section {
     padding-top: 150px;
   }
-  .download-section {
+  #benefits {
     padding: 100px 0;
   }
   #map {
@@ -296,6 +311,7 @@ a:focus {
   background-color: #42DCA3;
 }
 
+
 .user {
   display: inline-block;
   width: 150px;
@@ -305,7 +321,10 @@ a:focus {
   background-position: center;
   background-size: cover;
 }
-
+.about {
+  padding: 0;
+  margin: 20px;
+}
 #about {
   width: 100%;
   height: 100%;
