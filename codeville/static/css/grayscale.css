@@ -143,12 +143,13 @@ a:focus {
   vertical-align: middle;
 }
 .intro .intro-body .brand-heading {
-  margin-top: 30px;
+  margin-top: 50px;
   font-size: 40px;
   font-family: "My Font"
 }
 .intro .intro-body .intro-text {
-  font-size: 18px;
+  font-size: 15px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .intro {
@@ -160,7 +161,8 @@ a:focus {
     font-family: "My Font"
   }
   .intro .intro-body .intro-text {
-    font-size: 26px;
+    font-size: 22px;
+    text-align: center;
   }
 }
 .abc {
@@ -232,7 +234,7 @@ a:focus {
   }
 }
 .content-section {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .download-section {
   width: 100%;
@@ -247,12 +249,12 @@ a:focus {
 }
 #map {
   width: 100%;
-  height: 200px;
+  height: 200px;F
   margin-top: 100px;
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 250px;
+    padding-top: 150px;
   }
   .download-section {
     padding: 100px 0;
@@ -292,6 +294,11 @@ a:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+#about {
+  width: 100%;
+  height: 100%;
 }
 ul.banner-social-buttons {
   margin-top: 0;

@@ -76,18 +76,19 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">CodeVille</h1>
-                        <p class="intro-text">Wanna learn how to build impressive websites and apps? <br />Well, you're at the right place!</p>
+                        <center><p class="intro-text">Wanna learn how to build impressive websites and apps? <br />Well, you're at the right place!</p></center>
+                
                         <!--<a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>-->
                     </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-4 col-md-offset-4">
+                  <div class="col-md-4 col-md-offset-4" onsubmit="validate()">
                     <form action="" method="post" accept-charset="utf-8" class="form" role="form">{% csrf_token %}
-                      <input id="name" style="border-radius:2px;" type="text" name="name" value="" class="form-control input-lg" placeholder="Your Name"  />
-                      <input id="email" style="border-radius:2px;" type="email" name="email" value="" class="form-control input-lg" placeholder="Email"  />
-                      <input id="number" style="border-radius:2px;" type="text" name="number" value="" class="form-control input-lg" placeholder="Phone Number"  />
+                      <input id="name" style="border-radius:2px;" type="text" name="name" value="" class="form-control input-lg" placeholder="Your Name" required />
+                      <input id="email" style="border-radius:2px;" type="email" name="email" value="" class="form-control input-lg" placeholder="Email" required />
+                      <input id="number" style="border-radius:2px;" type="text" name="number" pattern="/^\d{10}$/" oninvalid="setCustomValidity('Enter your 10 digit phone number correctly.')" onchange="try{setCustomValidity('')}catch(e){}" value="" class="form-control input-lg" placeholder="Phone Number" required />
                       <hr />
                       <button id="submit" style="border-radius:2px;" class="btn btn-lg btn-primary btn-block signup-btn" type="submit">Sign Up</button>
                     </form>
@@ -171,13 +172,13 @@
     <script src="{% static 'js/grayscale.min.js' %}"></script>
 
     <script>
-      $("#submit").click(function(){
+      function validate(){
 
         name=$("#name").val();
         email=$("#email").val();
         phone=$("#number").val();
 
-        function validate(name,phone){
+        /*function validate(name,phone){
           if(name == ""){
             alert("Enter a name");
             return false;
@@ -192,7 +193,7 @@
         }
         var x=validate(name,phone);
 
-        if(x==true){
+        if(x==true){*/
           data = {'name':name, 'email':email, 'phone': phone}
           $.ajax({
             url: "/add/",
@@ -211,7 +212,63 @@
 
 
 
-      });
+      });*/
+
+      var W3CDOM = (document.getElementsByTagName && document.createElement);
+
+      window.onload = function () {
+      	document.forms[0].onsubmit = function () {
+      		return validate()
+      	}
+      }
+
+      function validate() {
+      	validForm = true;
+      	firstError = null;
+      	errorstring = '';
+      	var x = document.forms[0].elements;
+      	for (var i=0;i<x.length;i++) {
+      		if (!x[i].value)
+      			writeError(x[i],'This field is required');
+      	}
+      	if (x['email'].value.indexOf('@') == -1)
+      		writeError(x['email'],'This is not a valid email address');
+      	if (!W3CDOM)
+      		alert(errorstring);
+      	if (firstError)
+      		firstError.focus();
+      	if (validForm)
+      		alert('All data is valid!');
+      	return false;
+      }
+
+      function writeError(obj,message) {
+      	validForm = false;
+      	if (obj.hasError) return;
+      	if (W3CDOM) {
+      		obj.className += ' error';
+      		obj.onchange = removeError;
+      		var sp = document.createElement('span');
+      		sp.className = 'error';
+      		sp.appendChild(document.createTextNode(message));
+      		obj.parentNode.appendChild(sp);
+      		obj.hasError = sp;
+      	}
+      	else {
+      		errorstring += obj.name + ': ' + message + '\n';
+      		obj.hasError = true;
+      	}
+      	if (!firstError)
+      		firstError = obj;
+      }
+
+      function removeError()
+      {
+      	this.className = this.className.substring(0,this.className.lastIndexOf(' '));
+      	this.parentNode.removeChild(this.hasError);
+      	this.hasError = null;
+      	this.onchange = null;
+      }
     </script>
 
 

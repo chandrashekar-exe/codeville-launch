@@ -15,10 +15,12 @@ def add(request):
     name=request.POST['name']
     email=request.POST['email']
     phone=request.POST['phone']
+    phone="+(91)"+phone
     try:
         user = UserDetail(name=name,email=email,phone=phone)
+        print(user)
     except Exception as e:
-        print(e)
+        raise(e)
         return(HttpResponse("False"))
 
     user.save()
