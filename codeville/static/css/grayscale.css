@@ -57,6 +57,10 @@ a:focus {
   font-family: "My Font";
   src: url("Font/SF Planetary Orbiter Bold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Insomnia";
+  src: url("Font/Insomnia/Android Insomnia Regular.ttf") format("truetype");
+}
 .light {
   font-weight: 400;
 }
@@ -147,9 +151,15 @@ a:focus {
   font-size: 40px;
   font-family: "My Font"
 }
-.intro .intro-body .intro-text {
-  font-size: 15px;
+.row {
   text-align: center;
+}
+.intro .intro-body .intro-text {
+  font-size: 17px;
+  text-align: center;
+}
+.insomnia {
+  font-family: "Insomnia"
 }
 @media (min-width: 768px) {
   .intro {
@@ -161,7 +171,7 @@ a:focus {
     font-family: "My Font"
   }
   .intro .intro-body .intro-text {
-    font-size: 22px;
+    font-size: 23px;
     text-align: center;
   }
 }
