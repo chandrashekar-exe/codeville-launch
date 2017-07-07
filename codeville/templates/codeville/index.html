@@ -229,18 +229,18 @@
     <!--
     <div id="map"></div>-->
 
-    <!-- Footer -->
-    <footer>
-      <section id="register" class="container content-section text-center intro">
-        <div class="text-center mobile_padding">
 
-        <h2>Register Now</h2>
+    <!-- Benefits Section -->
+    <section id="register" class="text-center intro">
+    
+      <h2>Register Now</h2>
+      
+      <div class="container" >
+      <br /> 
 
-        <p>Limited entries only! Kindly come to our office between 10am to 11am for the payment registration.</p>
+       <p>Limited entries only! <br />Course is at an introductory price of &#8377;999 <sub>plus taxes</sub> per month.</p>
 
-        <br /> <br /> <br />
-
-            <div class="row">
+        <div class="row">
               <div class="col-md-4 col-md-offset-4" onsubmit="validate()">
                 <form action="" method="post" accept-charset="utf-8" class="form" role="form">{% csrf_token %}
                   <input id="name" style="border-radius:2px;" type="text" name="name" value="" class="form-control input-lg" placeholder="Your Name" required />
@@ -253,11 +253,22 @@
 
               </div>
 
-            </div><br/>
+            </div>
+        
 
-        </div>
-      </section>
+    </section>
 
+    
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+      
         <div class="container">
 
           <!--   <hr>

@@ -145,6 +145,13 @@ a:hover {
     }
 }
 
+
+
+#register{
+	background-image: url(../img/page4.jpg);
+	padding-top: 15%;
+}
+
 .bg_first{
 	background: url(../img/bg.jpg) bottom center no-repeat #000;
 }
@@ -394,5 +401,9 @@ img::-moz-selection {
 @media (max-width: 450px) {
 	.mobile_padding{
 		padding: 2%;
+	}
+
+	#register{
+		padding-top: 5%;
 	}
 }
