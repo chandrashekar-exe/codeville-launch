@@ -286,29 +286,30 @@
     <script src="{% static 'js/grayscale.js' %}"></script>
 
     <script>
-      function validate(){
 
+      function validate(){
         name=$("#name").val();
         email=$("#email").val();
         phone=$("#number").val();
-        alert(phone);
         data = {'name':name, 'email':email, 'phone': phone}
         $.ajax({
           url: "/add/",
           type: "POST",
           data: data,
-          dataType: "html or json",
+          dataType: 'html',
           success: function(response){
-            if(response=="True"){
-              alert("Success");
+            if(response == "True"){
+              callme();
             }
+
           },
           error: function(e){
             console.log(e);
             console.error();
           }
         });
-        }
+      }
+
 
     </script>
 

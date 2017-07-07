@@ -1,4 +1,4 @@
-from django.shortcuts import render,HttpResponse
+from django.shortcuts import render,HttpResponseRedirect
 from django.views.decorators.csrf import csrf_exempt
 from .models import UserDetail
 
@@ -22,4 +22,4 @@ def add(request):
     except Exception as e:
         return(HttpResponse("False"))
     user.save()
-    return(HttpResponse("True"))
+    return(HttpResponseRedirect("True"))
