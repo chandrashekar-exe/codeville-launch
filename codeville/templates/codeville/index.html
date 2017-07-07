@@ -43,7 +43,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header" style="padding-top:1%;">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
@@ -62,12 +62,13 @@
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-					<li>
-                        <a class="page-scroll" href="#register">Register</a>
-                    </li>
                     <li>
                         <a class="page-scroll" href="#benefits">Benefits</a>
                     </li>
+					          <li>
+                        <a class="page-scroll" href="#register">Register</a>
+                    </li>
+
                     <li>
                         <a class="page-scroll" href="contributors">Contributors</a>
                     </li>
@@ -87,9 +88,9 @@
                         <h1 class="brand-heading">CodeVille</h1>
                         <h2 class="insomnia">Build Real World Projects</h2>
                         <p class="intro-text">Learn programming while building real world projects.<br />Gain an impressive resume.</p>
-                        <p>Register to get the course excusively at just &#8377;999 <sub>plus taxes</sub></p>
+                        <p class="intro-text-two">Register to get the course excusively at just &#8377;999 <sub>plus taxes</sub></p>
                         <br />
-                        <p>Made exclusively for Bangaloreans!</p>
+                        <p class="intro-text-two">Made exclusively for Bangaloreans!</p>
 
                         <!--<a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
@@ -100,7 +101,7 @@
                 <div class="row">
                   <center><div>
                     <a class="callout_btn center" href="#about">Learn More</a>
-                   
+
                   </div><center>
                 </div>
 
@@ -112,16 +113,22 @@
 
 
      <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <section id="about" class="text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About CodeVille</h2>
-                <br /><br /><br />
-                <p>One of the main reason over 80% of engineering graduates are unemployable is because the curriculum that they are taught at colleges and universities are mostly outdated, students also do not build many projects leading to them having inferior pratical knowledge.</p>
-                <p>CodeVille is a platform designed to address these challenges and to enable students to gain useful programming skills.</p>
-                <p>Designed exclusively for Bangaloreans, it includes hands-on modules for web and mobile development.</p>
-                <p>Students get access to online(in development) and offline resources with individual mentorship to guide and help them overcome any hard obstacles that they face while learning.</p>
-            </div>
+          <h2 style="margin-top:5%;">About CodeVille</h2>
+          <br /><br /><br />
+          <p>One of the main reason over 80% of engineering graduates are unemployable is because the curriculum that they are taught at colleges and universities are mostly outdated, students also do not build many projects leading to them having inferior pratical knowledge.</p>
+          <p>CodeVille is a platform designed to address these challenges and to enable students to gain useful programming skills.</p>
+          <p>Designed exclusively for Bangaloreans, it includes hands-on modules for web and mobile development.</p>
+          <p>Students get access to online(in development) and offline resources with individual mentorship to guide and help them overcome any hard obstacles that they face while learning.</p>
+
+        </div>
+        <div class="row">
+          <center><div>
+            <a href="#benefits" class="btn btn-circle page-scroll">
+              <i class="fa fa-angle-double-down animated" style="display:inline-block"></i>
+            </a>
+          </div><center>
         </div>
     </section>
 
@@ -130,9 +137,9 @@
 
 
     <!-- Benefits Section -->
-    <section id="benefits" class="container content-section text-center">
-      <h2 class="about">Benefits</h2>
-      <div class="container">
+    <section id="benefits" class="text-center">
+      <h2 class="about" style="margin-top:5%;" >Benefits</h2>
+      <div class="container" >
         <div class="row">
           <div class="col-sm-6">
             <div  class="card" style="color:black;">
@@ -173,7 +180,7 @@
 
         </div>
         <div class="row">
-          <center><div>
+          <center><div style="margin-bottom:5%;">
             <a href="#register" class="btn btn-circle page-scroll">
               <i class="fa fa-angle-double-down animated" style="display:inline-block"></i>
             </a>
@@ -184,7 +191,7 @@
     </section>
 
 
-   
+
 
     <!-- Download Section -->
     <!--<section id="download" class="content-section text-center">
@@ -230,7 +237,7 @@
                 <form action="" method="post" accept-charset="utf-8" class="form" role="form">{% csrf_token %}
                   <input id="name" style="border-radius:2px;" type="text" name="name" value="" class="form-control input-lg" placeholder="Your Name" required />
                   <input id="email" style="border-radius:2px;" type="email" name="email" value="" class="form-control input-lg" placeholder="Email" required />
-                  <input id="number" style="border-radius:2px;" type="text" name="number" pattern="/^\d{10}$/" oninvalid="setCustomValidity('Enter your 10 digit phone number correctly.')" onchange="try{setCustomValidity('')}catch(e){}" value="" class="form-control input-lg" placeholder="Phone Number" required />
+                  <input id="number" style="border-radius:2px;" type="text" name="number" pattern="^[\d]{10}$" oninvalid="setCustomValidity('Enter your 10 digit phone number correctly.')" onchange="try{setCustomValidity('')}catch(e){}" value="" class="form-control input-lg" placeholder="Phone Number" required />
                   <hr />
                   <button id="submit" style="border-radius:2px;" class="btn btn-lg btn-primary btn-block signup-btn" type="submit">Sign Up</button>
                 </form>
@@ -239,7 +246,7 @@
               </div>
 
             </div><br/>
-            
+
         </div>
       </section>
 
@@ -247,7 +254,7 @@
 
           <!--   <hr>
                 <div class="text-center center-block">
-                    
+
                     <br />
                       <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
         	            <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
@@ -284,37 +291,23 @@
         name=$("#name").val();
         email=$("#email").val();
         phone=$("#number").val();
-
-        /*function validate(name,phone){
-          if(name == ""){
-            alert("Enter a name");
-            return false;
-          }
-          var phoneno = /^\d{10}$/;
-          if(phone.match(phoneno)){
-            return true;
-          }else {
-            alert("Error, phone no incorrect");
-            return false;
-          }
-        }
-        var x=validate(name,phone);
-
-        if(x==true){*/
-          data = {'name':name, 'email':email, 'phone': phone}
-          $.ajax({
-            url: "/add/",
-            type: "POST",
-            data:data,
-            success: function(response){
-              if(response=="True"){
-                alert("Success");
-              }
-            },
-            error: function(){
-              alert("Enter Details Correctly");
+        alert(phone);
+        data = {'name':name, 'email':email, 'phone': phone}
+        $.ajax({
+          url: "/add/",
+          type: "POST",
+          data: data,
+          dataType: "html or json",
+          success: function(response){
+            if(response=="True"){
+              alert("Success");
             }
-          });
+          },
+          error: function(e){
+            console.log(e);
+            console.error();
+          }
+        });
         }
 
     </script>

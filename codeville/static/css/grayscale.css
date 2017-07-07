@@ -21,7 +21,7 @@ h4,
 h5,
 h6 {
   display: inline-block;
-  margin: 0 0 10px 50px;
+  margin: 0 0 10px 0;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
@@ -161,23 +161,35 @@ a:focus {
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
+  padding: 5%;
 }
 .intro .intro-body .brand-heading {
   margin-top: 50px;
-  font-size: 40px;
+  font-size: 65px;
   font-family: "My Font"
 }
 .container .row .col-md-8 {
   text-align: center;
 }
+.container {
+  width: 100%;
+  height: auto;
+}
 .intro .intro-body .intro-text {
-  font-size: 17px;
+  font-size: 19px;
+  text-align: center;
+}
+.intro .intro-body .intro-text-two {
+  font-size: 16px;
   text-align: center;
 }
 .insomnia {
-  font-family: "Insomnia"
+  font-family: "Insomnia";
+  font-size: 25px;
 }
-@media (min-width: 768px) {
+
+/* For Desktops */
+@media (min-width: 1000px) {
   .intro {
     height: 100%;
     padding: 0;
@@ -186,9 +198,17 @@ a:focus {
     font-size: 100px;
     font-family: "My Font"
   }
-  .intro .intro-body .intro-text {
-    font-size: 23px;
+  .intro .intro-body .intro-text-two {
+    font-size: 21px;
     text-align: center;
+  }
+  .intro .intro-body .intro-text {
+    font-size: 25px;
+    text-align: center;
+  }
+  .insomnia {
+    font-family: "Insomnia";
+    font-size: 40px;
   }
 }
 .abc {
@@ -260,14 +280,14 @@ a:focus {
   }
 }
 .content-section {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 #benefits {
   width: 100%;
-  padding: 50px 0;
+  height: auto;
   color: white;
   background-color: black;
-  background: url(../img/bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/page3.jpg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -283,10 +303,16 @@ a:focus {
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 150px;
+    padding-top: 120px;
   }
   #benefits {
-    padding: 100px 0;
+    width: 100%;
+    background: url(../img/page3.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: auto%;
   }
   #map {
     height: 400px;
@@ -331,7 +357,47 @@ a:focus {
 }
 #about {
   width: 100%;
-  height: 100%;
+  background: url(../img/Bg.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: auto;
+  padding-bottom: 5%;
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+#about p {
+  font-size: 20px;
+}
+#about .row {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+@media (min-width: 1000px) {
+  #about {
+    width: 100%;
+    background: url(../img/Bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: auto;
+    padding-bottom: 5%;
+    font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+  }
+
+  #about p {
+    font-size: 25px;
+  }
+  #about .row {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 ul.banner-social-buttons {
   margin-top: 0;
@@ -352,7 +418,12 @@ ul.banner-social-buttons {
   }
 }
 footer {
-  padding: 50px 0;
+  padding-bottom: 5%;
+  background: url(../img/page4.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 footer p {
   margin: 0;
@@ -430,4 +501,3 @@ body {
 .callout_btn:active, .callout_btn:hover{
     color: #fff;
 }
-
