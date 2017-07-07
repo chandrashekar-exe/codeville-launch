@@ -308,7 +308,6 @@ a:focus {
   }
   #benefits {
     width: 100%;
-    background: url(../img/page3.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -358,7 +357,7 @@ a:focus {
 }
 #about {
   width: 100%;
-  background: url(../img/Bg.jpg) no-repeat center center scroll;
+  background: url(../img/bg1.jpg) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -382,7 +381,6 @@ a:focus {
 @media (min-width: 1000px) {
   #about {
     width: 100%;
-    background: url(../img/Bg.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
