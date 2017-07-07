@@ -284,8 +284,8 @@ a:focus {
 }
 #benefits {
   width: 100%;
-  height: 100%;
-  overflow: auto;
+  height: auto;
+
   color: white;
   background-color: black;
   background: url(../img/page3.jpg) no-repeat bottom center scroll;
@@ -294,7 +294,9 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
-
+#benefits p {
+  font-size: 17px;
+}
 
 
 #map {
@@ -302,7 +304,7 @@ a:focus {
   height: 200px;F
   margin-top: 100px;
 }
-@media (min-width: 767px) {
+@media (min-width: 950px) {
   .content-section {
     padding-top: 120px;
   }
@@ -315,6 +317,11 @@ a:focus {
     -o-background-size: cover;
     height: auto;
   }
+  #benefits p {
+    font-size: 20px;
+  }
+
+
   #map {
     height: 400px;
     margin-top: 250px;
@@ -363,7 +370,7 @@ a:focus {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  height: 100%;
+  height: auto;
   overflow: visible;
   padding-bottom: 5%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -387,7 +394,7 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 100%;
+    height: auto;
     overflow: visible;
     padding-bottom: 5%;
     font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -398,8 +405,8 @@ a:focus {
     font-size: 25px;
   }
   #about .row {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 ul.banner-social-buttons {
@@ -427,7 +434,7 @@ footer {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  height: 100%
+  height: auto;
 }
 footer p {
   margin: 0;
