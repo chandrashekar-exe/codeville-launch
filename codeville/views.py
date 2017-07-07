@@ -16,7 +16,6 @@ def add(request):
     email=request.POST['email']
     phone=request.POST['phone']
     phone="+91"+phone
-    print(phone)
     try:
         user = UserDetail(name=name,email=email,phone=phone)
         print(user)
