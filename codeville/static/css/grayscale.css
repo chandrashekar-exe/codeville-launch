@@ -295,8 +295,17 @@ a:focus {
 /* For desktops */
 @media (min-width: 768px) {
   .intro {
+    display: table;
+    width: 100%;
     height: 100%;
-    padding: 0;
+    padding: 40px 0;
+    color: white;
+    background: url(../img/bg.jpg) no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
   }
 
   .container .row {
@@ -863,6 +872,9 @@ ul.banner-social-buttons {
   footer h2 {
     font-size: 22px;
   }
+  footer form {
+    max-width: 60%;
+  }
 }
 
 @media (min-width: 320px) {
@@ -872,6 +884,9 @@ ul.banner-social-buttons {
   }
   footer h2 {
     font-size: 25px;
+  }
+  footer form {
+    max-width: 60%;
   }
 }
 
@@ -883,6 +898,9 @@ ul.banner-social-buttons {
   footer h2 {
     font-size: 30px;
   }
+  footer form {
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -892,6 +910,9 @@ ul.banner-social-buttons {
   }
   footer h2 {
     font-size: 40px;
+  }
+  footer form {
+    max-width: 40%;
   }
 
 }
