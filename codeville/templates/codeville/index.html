@@ -1,0 +1,349 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Codeville</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <!--<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}">
+    <!--<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{% static 'css/grayscale.min.css' %}">
+    <!--<link href="css/grayscale.css" rel="stylesheet">-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header" style="padding-top:1%;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    Codeville
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#benefits">Benefits</a>
+                    </li>
+					          <li>
+                        <a class="page-scroll" href="#register">Register</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="contributors">Contributors</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro bg_first">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h1 class="brand-heading">CodeVille</h1>
+                        
+                        <h2>Become a programming ace</h2>
+                        <br /> <br />
+                        
+                        <p class="intro-text-two">Get the course at the introductory price of &#8377;999 <sub>plus taxes</sub> per month</p>
+                        <br />
+                        <p class="intro-text-two">Made exclusively for Bangaloreans!</p>
+
+                        <!--<a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>-->
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                  <center><div>
+                    <a class="callout_btn center page-scroll" href="#register">Register Now</a>
+
+                  </div><center>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+
+
+     <!-- About Section -->
+    <section id="about" class="text-center intro">
+        <div class="row">
+        <div class="container">
+          <h2 style="margin-top:5%;">About CodeVille</h2>
+          <br /><br /><br />
+          <p class="about_p">One of the main reason over 80% of engineering graduates are unemployable is because the curriculum that they are taught at colleges and universities are mostly outdated, students also do not build many projects leading to them having inferior pratical knowledge.</p><br /><br />
+          <p>CodeVille is a platform designed to address these challenges and to enable students to gain useful programming skills by working on non-trivial real world projects.</p>
+          <br /><br />
+          <p class="about_p">Designed exclusively for Bangaloreans, it includes modules for web and mobile development. Office hours are also alloted each week wherein you can come to the office and clear your doubts.</p>
+          <br /><br />
+          <p class="about_p">Students get access to online and offline resources with individual mentorship to guide and help them overcome any hard obstacles that they face while learning.</p>
+
+        </div>
+        </div>
+        <div class="row">
+          <center><div>
+            <a href="#benefits" class="btn btn-circle page-scroll">
+              <i class="fa fa-angle-double-down animated" style="display:inline-block"></i>
+            </a>
+          </div><center>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="text-center intro">
+      <h2 class="about" style="margin-top:5%;" >Benefits</h2>
+      <br /><br /><br /><br />
+      <div class="container" >
+        <div class="row">
+          <div class="col-sm-6">
+            <div  class="card" style="color:black;">
+              <div class="card-header">Personal Mentor</div>
+              <div class="card-block" >
+                <p class="card-text">Students are offered personal guidance with the course and projects to ensure complete understanding of the concepts. Students are also allocated office hours wherein they can come to office and clear their doubts.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card" style="color:black;">
+              <div class="card-header">Better technology stack</div>
+              <div class="card-block">
+                <p class="card-text">Our technology stack comprises newer technologies that those taught elsewhere. Our stack enables you to build meaningful products in a faster, easier manner.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div  class="card" style="color:black;">
+              <div class="card-header">Learn by doing</div>
+              <div class="card-block">
+                <p class="card-text">Students are given projects as a part of the course, as well as, projects that they build on their own. This in turn builds the abilty of a student to implement.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card" style="color:black;">
+              <div class="card-header">Structured Course</div>
+              <div class="card-block">
+                <p class="card-text">The course offered is highly modular with supporting tests and mini-projects, making it simple for beginners.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <center><div style="margin-bottom:5%;">
+            <a href="#register" class="btn btn-circle page-scroll">
+              <i class="fa fa-angle-double-down animated" style="display:inline-block"></i>
+            </a>
+          </div><center>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+    <!-- Download Section -->
+    <!--<section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download Grayscale</h2>
+                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Contact Section -->
+    <!--<section id="contributors" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2><center>Contributors<center></h2>
+                  <div class="user" name="ashika" style="background-image:url('img/ashika.jpg')"></div>
+                  <div class="user" name="chandu" style="background-image:url('img/chandu.jpg')"></div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- Map Section -->
+    <!--
+    <div id="map"></div>-->
+
+
+    <!-- Benefits Section -->
+    <section id="register" class="text-center intro">
+    
+      <h2>Register Now</h2>
+      
+      <div class="container" >
+      <br /> 
+
+       <p>Limited entries only! <br />Course is at an introductory price of &#8377;999 <sub>plus taxes</sub> per month.</p>
+
+        <div class="row">
+              <div class="col-md-4 col-md-offset-4" onsubmit="validate()">
+                <form action="" method="post" accept-charset="utf-8" class="form" role="form">{% csrf_token %}
+                  <input id="name" style="border-radius:2px;" type="text" name="name" value="" class="form-control input-lg" placeholder="Your Name" required />
+                  <input id="email" style="border-radius:2px;" type="email" name="email" value="" class="form-control input-lg" placeholder="Email" required />
+                  <input id="number" style="border-radius:2px;" type="text" name="number" pattern="^[\d]{10}$" oninvalid="setCustomValidity('Enter your 10 digit phone number correctly.')" onchange="try{setCustomValidity('')}catch(e){}" value="" class="form-control input-lg" placeholder="Phone Number" required />
+                  <hr />
+                  <button id="submit" style="border-radius:2px;" class="btn btn-lg btn-primary btn-block signup-btn" onclick="validate()">Sign Up</button>
+                </form>
+                <br />
+
+              </div>
+
+            </div>
+        
+
+    </section>
+
+    
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+      
+        <div class="container">
+
+          <!--   <hr>
+                <div class="text-center center-block">
+
+                    <br />
+                      <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+        	            <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+        	            <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+        	            <a href="mailto:sumeru@everycrave.me"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+            <hr> -->
+        </div>
+        <div class="container text-center">
+          <p> &copy; Codeville 2017</p>
+        </div>
+
+
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{% static 'vendor/jquery/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="{% static 'js/grayscale.js' %}"></script>
+
+    <script>
+
+      function validate(){
+        name=$("#name").val();
+        email=$("#email").val();
+        phone=$("#number").val();
+        data = {'name':name, 'email':email, 'phone': phone}
+        $.ajax({
+          url: "/add/",
+          type: "POST",
+          data: data,
+          dataType: 'html',
+          success: function(response){
+            if(response == "True"){
+              callme();
+            }
+
+          },
+          error: function(e){
+            console.log(e);
+            console.error();
+          }
+        });
+      }
+
+
+    </script>
+
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102218509-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+
+</html>
