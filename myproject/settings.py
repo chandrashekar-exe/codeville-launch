@@ -25,7 +25,7 @@ SECRET_KEY = '8gdq0b-s!9us&ijn_7exow))mor5w%r1#au#&^hnxn@5v5!jcu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','chandrashekar.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -70,6 +70,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'myproject.wsgi.application'
+
+
+
 
 
 # Database
@@ -121,3 +124,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'akil@everycrave.me'
+# EMAIL_HOST_PASSWORD = os.environ['EMAILPASS']
