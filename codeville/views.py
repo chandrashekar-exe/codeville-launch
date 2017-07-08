@@ -33,6 +33,6 @@ def add(request):
     print(email)
     print(name)
     print(phone)
-    user = UserDetail.objects.create(name=name,email=email,phone=phone)
+    user = UserDetail.objects.create(name=name,email=email,phone=phone,phonetext=phone)
     user.save()
     return(HttpResponse(200))
