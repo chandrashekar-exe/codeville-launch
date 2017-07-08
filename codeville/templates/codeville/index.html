@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+    <link rel="stylesheet" href="{% static 'css/toastr.min.css' %}">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}">
@@ -232,7 +233,7 @@
         </div>
 
         <div class="row">
-            <center><form action="" method="post" accept-charset="utf-8" class="form" role="form" onsubmit="validate()">{% csrf_token %}
+            <center><form id="post-form" action="" method="post" accept-charset="utf-8" class="form" role="form">{% csrf_token %}
               <input id="name" style="border-radius:2px;" type="text" name="name" value="" class="form-control input-lg" placeholder="Your Name" required />
               <input id="email" style="border-radius:2px;" type="email" name="email" value="" class="form-control input-lg" placeholder="Email" required />
               <input id="number" style="border-radius:2px;" type="text" name="number" pattern="^[\d]{10}$" oninvalid="setCustomValidity('Enter your 10 digit phone number correctly.')" onchange="try{setCustomValidity('')}catch(e){}" value="" class="form-control input-lg" placeholder="Phone Number" required />
@@ -279,30 +280,41 @@
     <!-- Theme JavaScript -->
     <script src="{% static 'js/grayscale.js' %}"></script>
 
+    <script src="{% static 'js/toastr.min.js' %}"></script>
+
     <script>
 
-      function validate(){
-        name=$("#name").val();
-        email=$("#email").val();
-        phone=$("#number").val();
-        data = {'name':name, 'email':email, 'phone': phone}
-        $.ajax({
-          url: "/add/",
-          type: "POST",
-          data: data,
-          dataType: 'html',
-          success: function(response){
-            if(response == "True"){
-              callme();
-            }
+    toastr.options = {
+      "positionClass": "toast-top-center"
+    }
 
+      $('#post-form').on('submit', function(event){
+         event.preventDefault();
+         name=$("#name").val();
+         email=$("#email").val();
+         phone=$("#number").val();
+         data = {'name':name, 'email':email, 'phone': phone}
+         $.ajax({
+           url: "/add/",
+           type: "POST",
+           data: data,
+           dataType: 'html',
+           success: function(response){
+            if(response == 200){
+
+              toastr["success"]("Form submitted successfully", "Success")
+
+              $("#name").val("")
+              $("#email").val("")
+              $("#number").val("")
+
+            }
           },
           error: function(e){
             console.log(e);
-            console.error();
           }
         });
-      }
+       })
 
 
     </script>

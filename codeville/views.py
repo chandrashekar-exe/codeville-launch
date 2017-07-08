@@ -2,6 +2,7 @@ from django.shortcuts import render,HttpResponseRedirect
 from django.views.decorators.csrf import csrf_exempt
 from .models import UserDetail
 from django.core.mail import EmailMessage
+from django.http import HttpResponse
 
 # Create your views here.
 def create_user(request):
@@ -25,14 +26,13 @@ def contributors(request):
 @csrf_exempt
 def add(request):
     print("In add")
-    name=request.POST['name']
-    email=request.POST['email']
-    phone=request.POST['phone']
+    name=request.POST.get('name', False)
+    email=request.POST.get('email', False)
+    phone=request.POST.get('phone', False)
     phone="91"+phone
-    # send_email(email)
-    try:
-        user = UserDetail(name=name,email=email,phone=phone)
-    except Exception as e:
-        return(HttpResponse("False"))
+    print(email)
+    print(name)
+    print(phone)
+    user = UserDetail.objects.create(name=name,email=email,phone=phone)
     user.save()
-    return(HttpResponseRedirect("True"))
+    return(HttpResponse(200))
