@@ -27,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="{% static 'css/grayscale.css' %}">
+    <link rel="stylesheet" href="{% static 'css/grayscale.min.css' %}">
     <!--<link href="css/grayscale.css" rel="stylesheet">-->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -81,24 +81,29 @@
     </nav>
 
     <!-- Intro Header -->
-    <header class="intro">
+    <header class="intro bg_first">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
                         <h1 class="brand-heading">CodeVille</h1>
-                        <h2 class="insomnia">Become a programming ace</h2>
-                        <p class="intro-text">Get the course at an introductory price of &#8377;999<sub>plus taxes</sub> per month.</p>
+                        
+                        <h2>Become a programming ace</h2>
+                        <br /> <br />
+                        
+                        <p class="intro-text-two">Get the course at the introductory price of &#8377;999 <sub>plus taxes</sub> per month</p>
                         <br />
                         <p class="intro-text-two">Made exclusively for Bangaloreans!</p>
 
                         <!--<a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>-->
+                    </div>
                 </div>
                 <br />
                 <div class="row">
                   <center><div>
-                    <a class="callout_btn center page-scroll" href="#about">Learn More</a>
+                    <a class="callout_btn center page-scroll" href="#register">Register Now</a>
 
                   </div><center>
                 </div>
@@ -111,15 +116,19 @@
 
 
      <!-- About Section -->
-    <section id="about" class="text-center">
-        <div class="row" style="mix-blend-mode: difference;">
+    <section id="about" class="text-center intro">
+        <div class="row">
+        <div class="container">
           <h2 style="margin-top:5%;">About CodeVille</h2>
           <br /><br /><br />
-          <p>One of the main reason over 80% of engineering graduates are unemployable is because the curriculum that they are taught at colleges and universities are mostly outdated, students also do not build many projects leading to them having inferior pratical knowledge.</p>
-          <p>CodeVille is a platform designed to address these challenges and to enable students to gain useful programming skills.</p>
-          <p>Designed exclusively for Bangaloreans, it includes hands-on modules for web and mobile development.</p>
-          <p>Students get access to online(in development) and offline resources with individual mentorship to guide and help them overcome any hard obstacles that they face while learning.</p>
+          <p class="about_p">One of the main reason over 80% of engineering graduates are unemployable is because the curriculum that they are taught at colleges and universities are mostly outdated, students also do not build many projects leading to them having inferior pratical knowledge.</p><br /><br />
+          <p>CodeVille is a platform designed to address these challenges and to enable students to gain useful programming skills by working on non-trivial real world projects.</p>
+          <br /><br />
+          <p class="about_p">Designed exclusively for Bangaloreans, it includes modules for web and mobile development. Office hours are also alloted each week wherein you can come to the office and clear your doubts.</p>
+          <br /><br />
+          <p class="about_p">Students get access to online and offline resources with individual mentorship to guide and help them overcome any hard obstacles that they face while learning.</p>
 
+        </div>
         </div>
         <div class="row">
           <center><div>
@@ -135,15 +144,16 @@
 
 
     <!-- Benefits Section -->
-    <section id="benefits" class="text-center">
-      <h2 style="margin-top:5%;" >Benefits</h2>
+    <section id="benefits" class="text-center intro">
+      <h2 class="about" style="margin-top:5%;" >Benefits</h2>
+      <br /><br /><br /><br />
       <div class="container" >
         <div class="row">
           <div class="col-sm-6">
             <div  class="card" style="color:black;">
               <div class="card-header">Personal Mentor</div>
               <div class="card-block" >
-                <p class="card-text">Students are offered personal guidance with the course and projects to ensure complete understanding of the concepts.</p>
+                <p class="card-text">Students are offered personal guidance with the course and projects to ensure complete understanding of the concepts. Students are also allocated office hours wherein they can come to office and clear their doubts.</p>
               </div>
             </div>
           </div>
@@ -161,7 +171,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div  class="card" style="color:black;">
-              <div class="card-header">Projects</div>
+              <div class="card-header">Learn by doing</div>
               <div class="card-block">
                 <p class="card-text">Students are given projects as a part of the course, as well as, projects that they build on their own. This in turn builds the abilty of a student to implement.</p>
               </div>
@@ -219,32 +229,46 @@
     <!--
     <div id="map"></div>-->
 
+
+    <!-- Benefits Section -->
+    <section id="register" class="text-center intro">
+    
+      <h2>Register Now</h2>
+      
+      <div class="container" >
+      <br /> 
+
+       <p>Limited entries only! <br />Course is at an introductory price of &#8377;999 <sub>plus taxes</sub> per month.</p>
+
+        <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+                <form action="" method="post" accept-charset="utf-8" class="form" role="form" id="post-form">{% csrf_token %}
+                  <input id="name" style="border-radius:2px;" type="text" name="name" value="" class="form-control input-lg" placeholder="Your Name" required />
+                  <input id="email" style="border-radius:2px;" type="email" name="email" value="" class="form-control input-lg" placeholder="Email" required />
+                  <input id="number" style="border-radius:2px;" type="text" name="number" pattern="^[\d]{10}$" oninvalid="setCustomValidity('Enter your 10 digit phone number correctly.')" onchange="try{setCustomValidity('')}catch(e){}" value="" class="form-control input-lg" placeholder="Phone Number" required />
+                  <hr />
+                  <button id="submit" style="border-radius:2px;" class="btn btn-lg btn-primary btn-block signup-btn" type="submit">Sign Up</button>
+                </form>
+                <br />
+
+              </div>
+
+            </div>
+        
+
+    </section>
+
+    
+
+
+
+
+
+
+
     <!-- Footer -->
     <footer>
-      <section id="register" class="container content-section text-center">
-        <div class="row">
-
-        <h2 class="insomnia">Register Now</h2>
-
-        <p>Limited entries only! Kindly come to our office between 10am to 11am for the payment registration.</p>
-
-        <br /> <br /> <br />
-
-        </div>
-
-        <div class="row">
-            <center><form id="post-form" action="" method="post" accept-charset="utf-8" class="form" role="form">{% csrf_token %}
-              <input id="name" style="border-radius:2px;" type="text" name="name" value="" class="form-control input-lg" placeholder="Your Name" required />
-              <input id="email" style="border-radius:2px;" type="email" name="email" value="" class="form-control input-lg" placeholder="Email" required />
-              <input id="number" style="border-radius:2px;" type="text" name="number" pattern="^[\d]{10}$" oninvalid="setCustomValidity('Enter your 10 digit phone number correctly.')" onchange="try{setCustomValidity('')}catch(e){}" value="" class="form-control input-lg" placeholder="Phone Number" required />
-              <hr />
-              <button id="submit" style="border-radius:2px;" class="btn btn-lg btn-primary btn-block signup-btn" type="submit">Sign Up</button>
-            </form></center>
-            <br />
-
-        </div><br/>
-      </section>
-
+      
         <div class="container">
 
           <!--   <hr>
@@ -301,11 +325,11 @@
            dataType: 'html',
            success: function(response){
             if(response == 200){
-
+              
               toastr["success"]("Form submitted successfully", "Success")
 
               $("#name").val("")
-              $("#email").val("")
+              $("#email").val("") 
               $("#number").val("")
 
             }
