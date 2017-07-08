@@ -32,7 +32,6 @@ def add(request):
     # send_email(email)
     try:
         user = UserDetail(name=name,email=email,phone=phone)
-        print(user)
     except Exception as e:
         return(HttpResponse("False"))
     user.save()
