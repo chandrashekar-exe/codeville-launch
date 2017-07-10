@@ -21,7 +21,7 @@ def contributors(request):
 
 #      '''
 #     email = EmailMessage('Codeville - Complete your registration', body, to=[recipient])
-#     email.send()   
+#     email.send()
 
 @csrf_exempt
 def add(request):
@@ -29,10 +29,11 @@ def add(request):
     name=request.POST.get('name', False)
     email=request.POST.get('email', False)
     phone=request.POST.get('phone', False)
-    phone="91"+phone
+    phone_text = phone
+    phone="+91"+phone
     print(email)
     print(name)
     print(phone)
-    user = UserDetail.objects.create(name=name,email=email,phone=phone,phonetext=phone)
+    user = UserDetail.objects.create(name=name,email=email,phone=phone, phone_text = phone_text)
     user.save()
     return(HttpResponse(200))

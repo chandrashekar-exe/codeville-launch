@@ -1,361 +1,1090 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
-
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
+  <meta charset="utf-8">
+  <title>TechGut</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
 
-    <title>Codeville</title>
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
-    <!--<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Revolution css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'vendor/rs-plugin/css/settings.css' %}" media="screen"/>
+  <link rel="stylesheet" href="{% static 'vendor/rs-plugin/css/extralayer.css' %}">
 
-    <link rel="stylesheet" href="{% static 'css/toastr.min.css' %}">
+  <!-- Flat icon css -->
+  <link rel="stylesheet" href="{% static 'vendor/flat-icon/flaticon.css' %}">
 
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}">
-    <!--<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}">
 
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="{% static 'css/grayscale.min.css' %}">
-    <!--<link href="css/grayscale.css" rel="stylesheet">-->
+  <!-- Owl Carosel css -->
+  <link rel="stylesheet" href="{% static 'vendor/owl/css/owl.carousel.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/owl/css/owl.theme.default.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/owl/css/owl.theme.css' %}">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- mmenu -->
+  <link type="text/css" rel="stylesheet" href="{% static 'vendor/mmenu/css/jquery.mmenu.css' %}" />
 
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.css' %}">
+
+  <!-- Animate css -->
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+  <!-- Custom Style css -->
+  <link rel="stylesheet" href="{% static 'css/hover.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')
+</script>
+<![endif]-->
 </head>
+<body>
+  <div class="loader"></div>
+  <div class="main" id="home">
+    <!-- slider -->
+      <div class="tp-banner-container">
+      <div class="tp-banner">
+        <ul>  <!-- SLIDE  -->
+          <!--<li data-transition="fade" data-slotamount="25" data-masterspeed="2500"  data-thumb="img/slider/slider_img_01.jpg"  data-saveperformance="off">-->
+            <!-- MAIN IMAGE -->
+            <!--<img src="img/slider/slider_img_01.jpg"  alt="fullslide2" data-bgposition="center center" data-kenburns="on" data-duration="12000" data-ease="Power0.easeInOut" data-bgfit="115" data-bgfitend="100" data-bgpositionend="center center">
+            <div class="tp-caption very_large_text lfb ltt skewfromrightshort fadeout tp-resizeme head-tag"
+            data-x="637"
+            data-y="200"
+            data-speed="1500"
+            data-start="4500"
+            data-easing="Power3.easeInOut"
+            data-splitin="chars"
+            data-splitout="none"
+            data-elementdelay="0.1"
+            data-endelementdelay="0.1"
+            data-endspeed="300"
+            style="z-index: 5; max-width: auto; max-height: auto; font-size:63px;white-space: nowrap;color:#fff;"><h1>OUR THINKING</h1>
+          </div>
+          <div class="tp-caption very_large_text lfb ltt skewfromrightshort fadeout tp-resizeme head-tag"
+          data-x="1090"
+          data-y="200"
+          data-speed="1500"
+          data-start="5480"
+          data-easing="Power3.easeInOut"
+          data-splitin="chars"
+          data-splitout="none"
+          data-elementdelay="0.1"
+          data-endelementdelay="0.1"
+          data-endspeed="300"
+          style="z-index: 5; max-width: auto; max-height: auto; font-size:63px;white-space: nowrap;color:#f9844c;"><h1>IS</h1>
+        </div>-->
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <!-- LAYERS -->
+        <!--<div class="tp-caption very_large_text lfb ltt skewfromrightshort fadeout tp-resizeme"
+        data-x="637"
+        data-y="282"
+        data-speed="1500"
+        data-start="5500"
+        data-easing="Power3.easeInOut"
+        data-splitin="chars"
+        data-splitout="none"
+        data-elementdelay="0.1"
+        data-endelementdelay="0.1"
+        data-endspeed="300"
+        style="z-index: 5; max-width: auto; max-height: auto; font-size:63px;white-space: nowrap;color:#f9844c;"><h1>EXTREAMLY</h1>
+      </div>
+      <div class="tp-caption very_large_text lfb ltt skewfromrightshort fadeout tp-resizeme"
+      data-x="1024"
+      data-y="282"
+      data-speed="1500"
+      data-start="6500"
+      data-easing="Power3.easeInOut"
+      data-splitin="chars"
+      data-splitout="none"
+      data-elementdelay="0.1"
+      data-endelementdelay="0.1"
+      data-endspeed="300"
+      style="z-index: 5; max-width: auto; max-height: auto; font-size:63px;white-space: nowrap;color:#fff;"><h1>NICE</h1>
+    </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header" style="padding-top:1%;">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    Codeville
-                </a>
+
+
+    <div class="tp-caption lft randomrotate customout"
+    data-x="left"
+    data-y="center" data-voffset="110"
+    data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+    data-speed="800"
+    data-start="2000"
+    data-easing="Back.easeOut"
+    data-endspeed="500"
+    data-endeasing="Power4.easeIn"
+    data-captionhidden="on"
+    style="z-index: 9"><img src="img/slider/mobile.png" alt="" data-ww="550" data-hh="490">
+  </div>
+
+  <div class="tp-caption lfl randomrotate tp-resizeme"
+  data-x="60"
+  data-y="bottom" data-voffset="-70"
+  data-speed="800"
+  data-start="3000"
+  data-easing="Back.easeOut"
+  data-endspeed="500"
+  data-endeasing="Power4.easeIn"
+  data-captionhidden="on"
+  style="z-index: 9"><img src="img/slider/html.png" alt="" data-ww="125" data-hh="160">
+</div>
+
+<div class="tp-caption randomrotate tp-resizeme"
+data-x="210"
+data-y="bottom" data-voffset="-70"
+data-speed="800"
+data-start="4000"
+data-easing="Back.easeOut"
+data-endspeed="500"
+data-endeasing="Power4.easeIn"
+data-captionhidden="on"
+style="z-index: 9"><img src="img/slider/css.png" alt="" data-ww="125" data-hh="160">
+</div>
+<div class="tp-caption sfr randomrotate tp-resizeme"
+data-x="360"
+data-y="bottom" data-voffset="-70"
+data-speed="800"
+data-start="5000"
+data-easing="Back.easeOut"
+data-endspeed="500"
+data-endeasing="Power4.easeIn"
+data-captionhidden="on"
+style="z-index: 9"><img src="img/slider/js.png" alt="" data-ww="125" data-hh="160">
+</div>
+-->
+<!-- LAYER NR. 2 -->
+<!--<div class="tp-caption lfl tp-resizeme"
+data-x="637"
+data-y="365"
+data-speed="1000"
+data-start="8000"
+data-easing="Power3.easeOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.05"
+data-endelementdelay="0.1"
+data-endspeed="500"
+style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
+<h2 class="small-title second-title">neat and clean code</h2>
+</div>
+-->
+<!-- LAYER NR. 3 -->
+<!--<div class="tp-caption  lfl tp-resizeme"
+data-x="637"
+data-y="420"
+data-speed="1000"
+data-start="8600"
+data-easing="Power3.easeOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.05"
+data-endelementdelay="0.1"
+data-endspeed="500"
+data-endeasing="Power4.easeIn"
+style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
+<h2  class="small-title second-title">use custome offcanvas </h2>
+</div>-->
+<!-- LAYER NR. 4 -->
+<!--<div class="tp-caption  lfl tp-resizeme"
+data-x="637"
+data-y="475"
+data-speed="1000"
+data-start="9400"
+data-easing="Power3.easeOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.05"
+data-endelementdelay="0.1"
+data-endspeed="500"
+data-endeasing="Power4.easeIn"
+style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
+<h2 class="small-title second-title"> Perfect, HTML5, CSS3 & JS</h2>
+</div>
+-->
+<!-- LAYER NR. 5 -->
+<!--<div class="tp-caption lfr tp-resizeme start-button"
+data-x="637"
+data-y="540"
+data-speed="1000"
+data-start="10500"
+data-easing="Power3.easeOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.05"
+data-endelementdelay="0.1"
+data-endspeed="500"
+data-endeasing="Power4.easeIn"
+style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
+<button type="button" class="btn btn-primary" style="background-color: #e84700;border:1px solid #e95e1d;">buy now</button>
+</div>
+</li>
+-->
+<li class="items" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="img/slider/slider_img_02.jpg" data-delay="13000"  data-saveperformance="on">
+  <!-- MAIN IMAGE -->
+  <img src="{% static 'img/slider/slider_img_03.jpg' %}"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="14000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="130" data-bgpositionend="right center">
+  <!-- LAYERS -->
+
+
+  <!-- LAYER NR. 1 -->
+  <div class="tp-caption very_large_text lfb ltt tp-resizeme head-tag"
+  data-x="left" data-hoffset="20"
+  data-y="center" data-voffset="-100"
+  data-speed="600"
+  data-start="500"
+  data-easing="Power3.easeInOut"
+  data-splitin="chars"
+  data-splitout="chars"
+  data-elementdelay="0.08"
+  style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
+  <h1><span>CodeVille</span></h1>
+</div>
+
+<!-- LAYER NR. 2 -->
+<div class=" tp-caption  lfl tp-resizeme"
+data-x="-100"
+data-y="340"
+data-speed="500"
+data-start="1500"
+data-easing="Power3.easeOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.05"
+data-endelementdelay="0.1"
+data-endspeed="500"
+style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
+<h2 class="small-title">Become a programming ace</h2>
+</div>
+
+<!-- LAYER NR. 3 -->
+<div class="tp-caption  lfl tp-resizeme"
+data-x="-100"
+data-y="400"
+data-speed="1000"
+data-start="2000"
+data-easing="Power3.easeOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.05"
+data-endelementdelay="0.1"
+data-endspeed="500"
+data-endeasing="Power4.easeIn"
+style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
+<h2  class="small-title">Get the course now!at just &#8377;999</h2>
+</div>
+
+<!-- LAYER NR. 4 -->
+<div class="tp-caption  lfl tp-resizeme"
+data-x="-100"
+data-y="460"
+data-speed="2000"
+data-start="2500"
+data-easing="Power3.easeOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.05"
+data-endelementdelay="0.1"
+data-endspeed="500"
+data-endeasing="Power4.easeIn"
+style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
+<h2 class="small-title" > Made Exclusively for Bangaloreans!</h2>
+</div>
+
+<div class="tp-caption tp-resizeme lfb randomrotate down-arrow"
+data-x="center" data-hoffset="0"
+data-y="center" data-voffset="230"
+data-speed="2200"
+data-start="5500"
+data-easing="Power4.easeOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.01"
+data-endelementdelay="0.1"
+data-endspeed="500"
+data-endeasing="Power4.easeIn"
+style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
+<i class="scroll-bottom"><img  src="{% static 'img/slider_button.png' %}"  alt="arrow-down.png" class="img-responsive" ></i>
+</div>
+
+<!-- LAYER NR. 5 -->
+<!--<div class="tp-caption lfr tp-resizeme"
+data-x="right" data-hoffset="100"
+data-y="bottom" data-voffset="-90"
+data-speed="3000"
+data-start="4000"
+data-easing="Power3.easeOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.05"
+data-endelementdelay="0.1"
+data-endspeed="500"
+data-endeasing="Power4.easeIn"
+style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
+<button type="button" class="btn btn-default buy-btn">buy now</button>
+</div>-->
+</li>
+<!--<li class="items" data-transition="slidevertical" data-slotamount="1" data-masterspeed="1500" data-thumb="img/slider/slider_img_03.jpg" data-delay="13000"  data-saveperformance="off">-->
+  <!-- MAIN IMAGE -->
+  <!--<img src="img/slider/slider_img_03.jpg"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="14000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="130" data-bgpositionend="right center">-->
+  <!-- LAYERS -->
+
+  <!-- LAYER NR. 1 -->
+  <!--<div class="tp-caption very_large_text lfb ltt tp-resizeme head-tag"
+  data-x="center" data-hoffset="0"
+  data-y="center" data-voffset="-160"
+  data-speed="1200"
+  data-start="1700"
+  data-easing="Power3.easeOut"
+  data-splitin="none"
+  data-splitout="none"
+  data-elementdelay="0.05"
+  data-endelementdelay="0.1"
+  data-endspeed="500"
+  data-endeasing="Power4.easeIn"
+  style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
+  <h1><span>we create </span> amazing layout </h1>
+</div>
+-->
+<!-- LAYER NR. 2 -->
+<!--<div class="tp-caption  lfl tp-resizeme small-text"
+data-x="center" data-hoffset="0"
+data-y="center" data-voffset="-60"
+data-speed="1500"
+data-start="2000"
+data-easing="Power1.easeInOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.1"
+data-endelementdelay="0.1"
+data-endspeed="300"
+style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a adipiscinglib,</p>
+</div>
+-->
+<!-- LAYER NR. 3 -->
+<!--<div class="tp-caption  lfl tp-resizeme small-text"
+data-x="center" data-hoffset="0"
+data-y="center" data-voffset="-30"
+data-speed="1500"
+data-start="2000"
+data-easing="Power1.easeInOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.1"
+data-endelementdelay="0.1"
+data-endspeed="300"
+style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">
+<p>ultriceslectus. Cras porta nisl at tincidunt tincidunt.</p>
+</div>
+-->
+<!-- LAYER NR. 4 -->
+<!--<div class="tp-caption lfr tp-resizeme start-button"
+data-x="center" data-hoffset="-90"
+data-y="center" data-voffset="33"
+data-speed="2000"
+data-start="3500"
+data-easing="Power4.easeInOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.1"
+data-endelementdelay="0.1"
+data-endspeed="1000"
+data-endeasing="Power1.easeOut"
+style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">
+<button type="button" class="btn btn-danger" style="background-color:transparent;">see More</button>
+</div>
+-->
+<!-- LAYER NR. 5 -->
+<!--<div class="lfr tp-caption tp-resizeme start-button"
+data-x="center" data-hoffset="90"
+data-y="center" data-voffset="33"
+data-speed="2500"
+data-start="4000"
+data-easing="Power4.easeInOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.1"
+data-endelementdelay="0.1"
+data-endspeed="1000"
+data-endeasing="Power1.easeOut"
+style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">
+<button type="button" class="btn btn-primary" style="background-color: #e84700;border:1px solid #e95e1d;">buy now</button>
+</div>-->
+<!-- LAYER NR. 6 -->
+<!--<div class="tp-caption tp-resizeme lfb randomrotate down-arrow"
+data-x="center" data-hoffset="0"
+data-y="center" data-voffset="230"
+data-speed="2200"
+data-start="5500"
+data-easing="Power4.easeOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.01"
+data-endelementdelay="0.1"
+data-endspeed="500"
+data-endeasing="Power4.easeIn"
+style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
+<i class="scroll-bottom"><img  src="img/slider_button.png"  alt="arrow-down.png" class="img-responsive" ></i>
+</div>
+</li>-->
+</ul>
+</div>
+</div>
+    <!-- slider -->
+<header  class="header-part">
+  <div id="home" class="wrapper">
+    <!-- Fixed navbar -->
+    <div class="navi navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <a href="#menu">
+            <button type="button" data-effect="st-effect-1" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </a>
+          <a class="navbar-brand" href="index.html"><h1>CodeVille</h1></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse pull-right hidden-xs">
+          <ul class="nav navbar-nav navbar-right">
+            <li ><a class="page-scroll" href="#home">Home</a></li>
+            <li> <a class="page-scroll" href="#clean">about us</a></li>
+            <li> <a class="page-scroll" href="#services">services</a></li>
+            <li> <a class="page-scroll" href="#product">product</a></li>
+            <li> <a class="page-scroll" href="#team">team</a></li>
+          <li><a class="page-scroll" href="#contact">Contact</a></li>
+          <!-- Search Block -->
+          <li>
+            <i class="search fa fa-search search-btn"></i>
+            <div class="search-open" style="display:none;" >
+              <div class="input-group animated fadeInDown" >
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-btn">
+                  <button class="btn-u" type="button">Go</button>
+                </span>
+              </div>
             </div>
+          </li>
+          <!-- End Search Block -->
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div><!-- End of Nav -->
+</div>
+</header>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#benefits">Benefits</a>
-                    </li>
-					          <li>
-                        <a class="page-scroll" href="#register">Register</a>
-                    </li>
+<!-- WHO WE ARE -->
+<section id="about" class="who-we-are section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="wow zoomIn col-xs-12 col-lg-12 text-center p-padding">
+        <h1 class="section-title">What you'll learn</h1>
+        <p>Our course has a frequently updated curriculum. Its comprises newer technologies which helps in building projects in a faster, easier manner.</p>
+      </div><!-- col-xs-12 -->
+      <div class="wow zoomIn col-xs-12 col-sm-6 col-md-4 text-center">
+        <div class="icon-circle">
+          <i class="fa fa-cloud"></i>
+        </div><!-- /.icon-circle -->
+        <div class="who-we-are-content text-center">
+          <h2>Web Applications</h2>
+          <p>Build real world web apps using technologies like Django and Angular and NodeJS</p>
+        </div><!-- /.who-we-are-content -->
+      </div><!-- /.col-xs-6 -->
+      <div class="wow zoomIn col-xs-12 col-sm-6 col-md-4 text-center">
+        <div class="icon-circle">
+          <i class="fa fa-laptop"></i>
+        </div><!-- /.icon-circle -->
+        <div class="who-we-are-content text-center">
+          <h2>Mobile Application Development</h2>
+          <p>Our course includes building full featured mobile apps with their own cloud backend and databases.</p>
+        </div><!-- /.who-we-are-content -->
+      </div><!-- /.col-xs-6 -->
+      <div class="wow zoomIn col-xs-12 col-sm-6 col-md-4 text-center">
+        <div class="icon-circle">
+          <i class="fa flaticon-christmas128"></i>
+        </div><!-- /.icon-circle -->
+        <div class="who-we-are-content text-center">
+          <h2>DevOps</h2>
+          <p>After you have built your awesome project, you need to deploy it for all the world to see and use.</p>
+        </div><!-- /.who-we-are-content -->
+      </div><!-- /.col-xs-6 -->
 
-                    <li>
-                        <a class="page-scroll" href="contributors">Contributors</a>
-                    </li>
+      <!-- <div class="wow zoomIn col-xs-12 col-sm-6 col-md-3 text-center">
+        <div class="icon-circle">
+          <i class="fa fa-code"></i>
+        </div>
+        <div class="who-we-are-content text-center">
+          <h2>beautifully crafted</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan venenatis lectus sed sollicitudin. </p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+<!-- OUR SERVICES -->
+<section id="services" class="service section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="wow zoomIn col-xs-12 text-center p-padding">
+        <h1 class="section-title">why we stand out</h1>
+      </div><!-- col-xs-12 -->
+      <div class="col-xs-12 col-sm-5 col-md-5">
+        <div class="left-column">
+          <div class="wow zoomIn media">
+            <div class="media-left media-middle">
+              <a href="#">
+                <i class="fa fa-bolt"></i>
+              </a>
+            </div>
+            <div class="media-body">
+              <h2>Work on live projects</h2>
+              <h3>Get to work on ongoing software projects</h3>
+              <!--<span>iusto odio</span>-->
+            </div>
+          </div>
+          <div class="wow zoomIn media">
+            <div class="media-left media-middle">
+              <a href="#">
+                <i class="fa fa-user"></i>
+              </a>
+            </div>
+            <div class="media-body">
+              <h2>Personal mentoring</h2>
+              <h3>Recieve one-one guidance from mentors</h3>
+              <!--<span>iusto odio</span>-->
+            </div>
+          </div>
+          <div class="wow zoomIn media">
+            <div class="media-left media-middle">
+              <a href="#">
+                <i class="fa fa-database"></i>
+              </a>
+            </div>
+            <div class="media-body">
+              <h2>Latest software stack</h2>
+              <h3>Build products with the latest technologies available</h3>
+              <!--<span>iusto odio</span>-->
+            </div>
+          </div>
+        </div>
+      </div><!-- col-md-5 -->
+
+      <div class="col-xs-6 col-sm-2 col-md-2 hidden-xs">
+        <div class="image-box">
+          <img class="img-responsive" src="{% static 'img/phn.png' %}" alt="">
+        </div>
+      </div><!-- /col-md-2 -->
+
+      <div class="col-xs-12 col-sm-5 col-md-5">
+        <div class="right-column">
+          <div class="wow zoomIn media">
+            <div class="media-left media-middle">
+              <a href="#">
+                <i class="fa fa-comments"></i>
+              </a>
+            </div><!-- media left-->
+            <div class="media-body">
+              <h2>Collaborative learning</h2>
+              <h3>Form teams with peers for interactive learning</h3>
+              <!--<span>iusto odio</span>-->
+            </div><!--/.media body-->
+          </div><!-- /.media -->
+          <div class="wow zoomIn media">
+            <div class="media-left media-middle">
+              <a href="#">
+                <i class="fa fa-briefcase"></i>
+              </a>
+            </div><!-- media left-->
+            <div class="media-body">
+              <h2>Corporate ready</h2>
+              <h3>Learn to implement what you've learnt into real world products</h3>
+              <!--<span>iusto odio</span>-->
+            </div><!--/.media body-->
+          </div><!-- /.media -->
+          <div class="wow zoomIn media">
+            <div class="media-left media-middle">
+              <a href="#">
+                <i class="fa fa-laptop"></i>
+              </a>
+            </div><!-- media left-->
+            <div class="media-body">
+              <h2>Certified course</h2>
+              <h3>Recieve a certificate and add credentials to your resume</h3>
+              <!--<span>iusto odio</span>-->
+            </div><!--/.media body-->
+          </div><!-- /.media -->
+        </div><!-- /.right-column -->
+      </div>
+    </div><!-- row-->
+  </div><!-- container -->
+</section><!-- /our services -->
+
+<!-- CLEAN IDEA AND UNIQUE DESIGN -->
+<section id="clean" class="clean-idea section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="wow zoomIn col-xs-12 text-center p-padding">
+        <h1 class="section-title">About Codeville</h1>
+        <p>Students get access to online and offline resources with individual mentorship to guide and help them overcome any hard obstacles that they face while learning.</p>
+        <div class="button-set">
+          <!--<button type="button" class="btn btn-danger"><i class="fa fa-link"></i>Read More</button>-->
+          <a href="#contact" class="page-scroll contact-us"><i class="fa fa-phone"></i>Contact Us</a>
+        </div><!-- /.button-set -->
+      </div><!-- col-xs-12 -->
+    </div><!-- row-->
+  </div><!-- container -->
+</section><!-- /clean idea and unique design -->
+
+<!-- OUR LATEST WORKS -->
+<section class="protfolio section-padding" id="product">
+  <div class="container">
+    <div class="row">
+      <div class="wow zoomIn col-xs-12 text-center p-padding animated" style="visibility: visible; animation-name: zoomIn;">
+        <h1 class="section-title">Live Projects</h1>
+      </div>
+    </div><!-- row -->
+  </div>
+  <br /><br /><!-- container -->
+  <!--<div class="portfolio-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="wow zoomIn animated" id="filter" style="visibility: visible; animation-name: zoomIn;">
+            <li><a data-group="all" href="#" class="active">all</a></li>
+            <li><a data-group="wordpress" href="#">wordpress</a></li>
+            <li><a data-group="video" href="#">video</a></li>
+            <li><a data-group="image" href="#">image</a></li>
+            <li><a data-group="branding" href="#">branding</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+
+
+  <div class="row">
+    <div id="grid" class="shuffle" style="position: relative; height: 600px;">
+      <!-- portfolio-item -->
+      <div data-groups='["all", "image", "video"]' class=" portfolio-item col-xs-12 col-sm-6 col-md-3 shuffle-item filtered animated" style="margin:0; padding:0;">
+        <div class="portfolio">
+          <figure class="effect-julia">
+            <img alt="img21" src="{% static 'img/portfolio01.jpg' %}">
+            <figcaption>
+              <div class="socials">
+                <a data-toggle="modal" data-target="#myModal1" href=""><i class="fa fa-expand"></i></a>
+                <a href=""><i class="fa fa-share animated"></i></a>
+              </div>
+              <div class="scoial-heading">
+                <p>Give Away</p>
+                <strong>Donate food, kill hunger</strong>
+              </div>
+            </figcaption>
+          </figure>
+        </div><!-- /.portfolio -->
+      </div><!-- /.portfolio-item -->
+      <!-- MODAL/POPUP -->
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class=" btn btn-default pull-right" data-dismiss="modal">X</button>
+              <span class="modal-title" id="myModalLabel">Our recent work</span>
+            </div>
+            <div class="modal-body" >
+              <img src="{% static 'img/portfolio01.jpg' %}" alt="img21"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL/POPUP -->
+
+
+      <!-- portfolio-item -->
+      <div data-groups='["all", "image","wordpress","branding"]' class=" portfolio-item col-xs-12 col-sm-6 col-md-3 shuffle-item filtered " style="margin:0; padding:0;">
+        <div class="portfolio">
+          <figure class="effect-julia">
+            <img alt="img21" src="{% static 'img/portfolio02.jpg' %}">
+            <figcaption>
+              <div class="socials">
+                <a data-toggle="modal" data-target="#myModal2" href=""><i class="fa fa-expand"></i></a>
+                <a href=""><i class="fa fa-share animated"></i></a>
+              </div>
+              <div class="scoial-heading">
+                <p>PedalFit</p>
+                <strong>Icons, Illustrations</strong>
+              </div>
+            </figcaption>
+          </figure>
+        </div><!-- /.portfolio -->
+      </div><!-- /portfolio-item -->
+      <!-- MODAL/POPUP -->
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class=" btn btn-default pull-right" data-dismiss="modal">X</button>
+              <span class="modal-title" id="myModalLabel">Our recent work</span>
+            </div>
+            <div class="modal-body" >
+              <img src="{% static 'img/portfolio02.jpg' %}" alt="img21"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL/POPUP -->
+
+
+
+      <!-- portfolio-item -->
+      <div data-groups='["all", "image","wordpress", "circle", "video"]' class=" portfolio-item col-xs-12 col-sm-6 col-md-3 shuffle-item filtered " style="margin:0; padding:0;">
+        <div class="portfolio">
+          <figure class="effect-julia">
+            <img alt="img21" src="{% static 'img/portfolio03.jpg' %}">
+            <figcaption>
+              <div class="socials">
+                <a data-toggle="modal" data-target="#myModal3" href=""><i class="fa fa-expand"></i></a>
+                <a href=""><i class="fa fa-share animated"></i></a>
+              </div>
+              <div class="scoial-heading">
+                <p>LiveWire</p>
+                <strong>A Realtime communications cloud</strong>
+              </div>
+            </figcaption>
+          </figure>
+        </div><!-- /.portfolio -->
+      </div><!-- /portfolio-item -->
+      <!-- MODAL/POPUP -->
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class=" btn btn-default pull-right" data-dismiss="modal">X</button>
+              <span class="modal-title" id="myModalLabel">Our recent work</span>
+            </div>
+            <div class="modal-body" >
+              <img src="{% static 'img/portfolio03.jpg' %}" alt="img21"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL/POPUP -->
+
+
+      <!-- portfolio-item -->
+      <div data-groups='["image", "all","wordpress", "branding"]' class=" portfolio-item col-xs-12 col-sm-6 col-md-3 shuffle-item filtered " style="margin:0; padding:0;">
+        <div class="portfolio">
+          <figure class="effect-julia">
+            <img alt="img21" src="{% static 'img/portfolio04.jpg' %}">
+            <figcaption>
+              <div class="socials">
+                <a data-toggle="modal" data-target="#myModal4" href=""><i class="fa fa-expand"></i></a>
+                <a href=""><i class="fa fa-share animated"></i></a>
+              </div>
+              <div class="scoial-heading">
+                <p>LiveEnterprise</p>
+                <strong>Custom built application, Engineered to fit your requirements.</strong>
+              </div>
+            </figcaption>
+          </figure>
+        </div><!-- /.portfolio -->
+      </div><!-- /portfolio-item -->
+      <!-- MODAL/POPUP -->
+      <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class=" btn btn-default pull-right" data-dismiss="modal">X</button>
+              <span class="modal-title" id="myModalLabel">Our recent work</span>
+            </div>
+            <div class="modal-body" >
+              <img src="{% static 'img/portfolio04.jpg' %}" alt="img21"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL/POPUP -->
+
+
+
+      <!-- MODAL/POPUP -->
+    </div> <!-- /grid -->
+  </div><!-- /row -->
+</section><!-- /our latest works -->
+
+
+<!-- OUR TEAM -->
+<section id="team" class="our-team section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="wow zoomIn col-xs-12 text-center p-padding">
+        <h1 class="section-title">meet our team</h1>
+      </div><!-- col-xs-12 -->
+    </div><!-- row -->
+    <div class="row" style="align-content:center">
+      <div class="wow zoomIn col-xs-12 col-sm-6 col-md-3">
+        <div class="grid">
+          <figure class="effect-duke">
+            <img class="img-responsive" src="{% static 'img/chandu.jpg' %}" alt="img09">
+            <figcaption>
+              <div class="icon-holder">
+                <ul >
+                  <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Header -->
-    <header class="intro bg_first">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center">
-                        <h1 class="brand-heading">CodeVille</h1>
-                        
-                        <h2>Become a programming ace</h2>
-                        <br /> <br />
-                        
-                        <p class="intro-text-two">Get the course at the introductory price of &#8377;999 <sub>plus taxes</sub> per month</p>
-                        <br />
-                        <p class="intro-text-two">Made exclusively for Bangaloreans!</p>
-
-                        <!--<a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>-->
-                    </div>
-                </div>
-                <br />
-                <div class="row">
-                  <center><div>
-                    <a class="callout_btn center page-scroll" href="#register">Register Now</a>
-
-                  </div><center>
-                </div>
-
-
-            </div>
-        </div>
-    </header>
-
-
-
-     <!-- About Section -->
-    <section id="about" class="text-center intro">
-        <div class="row">
-        <div class="container">
-          <h2 style="margin-top:5%;">About CodeVille</h2>
-          <br /><br /><br />
-          <p class="about_p">One of the main reason over 80% of engineering graduates are unemployable is because the curriculum that they are taught at colleges and universities are mostly outdated, students also do not build many projects leading to them having inferior pratical knowledge.</p><br /><br />
-          <p>CodeVille is a platform designed to address these challenges and to enable students to gain useful programming skills by working on non-trivial real world projects.</p>
-          <br /><br />
-          <p class="about_p">Designed exclusively for Bangaloreans, it includes modules for web and mobile development. Office hours are also alloted each week wherein you can come to the office and clear your doubts.</p>
-          <br /><br />
-          <p class="about_p">Students get access to online and offline resources with individual mentorship to guide and help them overcome any hard obstacles that they face while learning.</p>
-
-        </div>
-        </div>
-        <div class="row">
-          <center><div>
-            <a href="#benefits" class="btn btn-circle page-scroll">
-              <i class="fa fa-angle-double-down animated" style="display:inline-block"></i>
-            </a>
-          </div><center>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- Benefits Section -->
-    <section id="benefits" class="text-center intro">
-      <h2 class="about" style="margin-top:5%;" >Benefits</h2>
-      <br /><br /><br /><br />
-      <div class="container" >
-        <div class="row">
-          <div class="col-sm-6">
-            <div  class="card" style="color:black;">
-              <div class="card-header">Personal Mentor</div>
-              <div class="card-block" >
-                <p class="card-text">Students are offered personal guidance with the course and projects to ensure complete understanding of the concepts. Students are also allocated office hours wherein they can come to office and clear their doubts.</p>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="card" style="color:black;">
-              <div class="card-header">Better technology stack</div>
-              <div class="card-block">
-                <p class="card-text">Our technology stack comprises newer technologies that those taught elsewhere. Our stack enables you to build meaningful products in a faster, easier manner.</p>
-              </div>
-            </div>
-          </div>
-
+            </figcaption>
+          </figure>
         </div>
-
-        <div class="row">
-          <div class="col-sm-6">
-            <div  class="card" style="color:black;">
-              <div class="card-header">Learn by doing</div>
-              <div class="card-block">
-                <p class="card-text">Students are given projects as a part of the course, as well as, projects that they build on their own. This in turn builds the abilty of a student to implement.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="card" style="color:black;">
-              <div class="card-header">Structured Course</div>
-              <div class="card-block">
-                <p class="card-text">The course offered is highly modular with supporting tests and mini-projects, making it simple for beginners.</p>
-              </div>
-            </div>
-          </div>
-
+        <div class="team-designation">
+          <p>Chandrashekar</p>
+          <span>Intern</span>
         </div>
-        <div class="row">
-          <center><div style="margin-bottom:5%;">
-            <a href="#register" class="btn btn-circle page-scroll">
-              <i class="fa fa-angle-double-down animated" style="display:inline-block"></i>
-            </a>
-          </div><center>
+      </div>
+      <div class=" wow zoomIn col-xs-12 col-sm-6 col-md-3">
+        <div class="grid">
+          <figure class="effect-duke">
+            <img class="img-responsive" src="{% static 'img/ashi.jpg' %}" alt="img09">
+            <figcaption>
+              <div class="icon-holder">
+                <ul >
+                  <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="team-designation">
+          <p>Ashika</p>
+          <span>Intern</span>
         </div>
       </div>
 
-    </section>
+    </div><!-- row -->
+  </div><!-- container -->
+</section><!-- our team -->
 
-
-
-
-    <!-- Download Section -->
-    <!--<section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-    <!-- Contact Section -->
-    <!--<section id="contributors" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2><center>Contributors<center></h2>
-                  <div class="user" name="ashika" style="background-image:url('img/ashika.jpg')"></div>
-                  <div class="user" name="chandu" style="background-image:url('img/chandu.jpg')"></div>
-            </div>
-        </div>
-    </section>
--->
-    <!-- Map Section -->
-    <!--
-    <div id="map"></div>-->
-
-
-    <!-- Benefits Section -->
-    <section id="register" class="text-center intro">
-    
-      <h2>Register Now</h2>
-      
-      <div class="container" >
-      <br /> 
-
-       <p>Limited entries only! <br />Course is at an introductory price of &#8377;999 <sub>plus taxes</sub> per month.</p>
-
-        <div class="row">
-              <div class="col-md-4 col-md-offset-4">
-                <form action="" method="post" accept-charset="utf-8" class="form" role="form" id="post-form">{% csrf_token %}
-                  <input id="name" style="border-radius:2px;" type="text" name="name" value="" class="form-control input-lg" placeholder="Your Name" required />
-                  <input id="email" style="border-radius:2px;" type="email" name="email" value="" class="form-control input-lg" placeholder="Email" required />
-                  <input id="number" style="border-radius:2px;" type="text" name="number" pattern="^[\d]{10}$" oninvalid="setCustomValidity('Enter your 10 digit phone number correctly.')" onchange="try{setCustomValidity('')}catch(e){}" value="" class="form-control input-lg" placeholder="Phone Number" required />
-                  <hr />
-                  <button id="submit" style="border-radius:2px;" class="btn btn-lg btn-primary btn-block signup-btn" type="submit">Sign Up</button>
-                </form>
-                <br />
-
+<!-- TESTIMONIAL-->
+<section class="wow zoomIn testimmonial section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="testimonial-feed">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active text-center">
+                <div class="image-bar" ><img src="{% static 'img/ashi.jpg' %}" alt=""></div>
+                <p>“A differently structured course with time to time implementation of the learnt concepts”</p>
+                <span class="pull-right"> Ashika M</span>
               </div>
+              <div class="item text-center">
+                <div class="image-bar" ><img src="{% static 'img/chandu.jpg' %}" alt=""></div>
+                <p>"An innovative learning environment that helps you build real world products, with one-one guidance from mentors."</p>
+                  <span class="pull-right">  Chandrashekar</span>
+                </div><!-- item text-center -->
+              </div><!-- carousel-inner -->
+            </div><!-- carousel -->
+          </div><!-- testimonial-feed -->
+          <div class="control-arrow">
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <i class="flaticon-previous11"></i>
+            </a>
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <i class="flaticon-next15"></i>
+            </a>
+          </div><!-- /.control-arrow -->
+        </div><!-- /.col-xs-12 -->
+      </div><!-- row -->
+    </div><!-- container -->
+  </section><!-- testimonial -->
 
+
+
+  <!-- GET IN TOUCH -->
+  <section id="contact" class="contact-wrapper section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="wow zoomIn col-xs-12 text-center p-padding">
+          <h1 class="section-title">get in touch</h1>
+        </div><!-- col-xs-12 -->
+        <div class="wow zoomIn col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+          <form name="contactForm" id='contact_form' method="post" action='php/email.php'>
+            <div class="form-inline">
+              <div class="form-group col-sm-12">
+                <input type="text" class="form-control" name="name" id="exampleInputName" placeholder="name" >
+              </div>
+              <div class="form-group col-sm-12">
+                <input type="email" class="form-control" name="email" id="exampleInputEmail" placeholder="email address">
+              </div>
+              <div class="form-group col-sm-12">
+                <input type="text" class="form-control" name="phone" id="exampleInputPhone" placeholder="phone number">
+              </div>
+              <!--<div class="form-group col-sm-6">
+                <input type="text" class="form-control" name="subject" id="exampleInputSubject" placeholder="subject" >
+              </div>
+              <div class="form-group col-sm-6">
+                <input type="text" class="form-control" name="company" id="exampleInputCompany" placeholder="company" >
+              </div>
+              <div class="form-group col-sm-12">
+                <textarea class="form-control" name="message" rows="3" id="exampleInputMessage" placeholder="message" ></textarea>
+              </div>-->
             </div>
-        
+            <div class="form-group col-xs-12">
+              <div id='mail_success' class='success' style="display:none;">Your message has been sent successfully.
+              </div><!-- success message -->
+              <div id='mail_fail' class='error' style="display:none;"> Sorry, error occured this time sending your message.
+              </div><!-- error message -->
+            </div>
+            <div class="form-group col-sm-12" id='submit'>
+              <input type="submit" id='send_message' class="btn  btn-lg costom-btn" value="send">
+            </div>
+          </form>
+        </div> <!-- /.col-xs-12 .col-sm-offset-2 .col-sm-8 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- get in touch -->
 
-    </section>
+  <!-- footer -->
+  <footer >
+    <div class="footer-wrapper section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="wow zoomIn col-xs-12 col-sm-6 col-md-3">
+            <a href="index.html"><h1>CodeVille</h1></a>
+            <p class="footer-content">Become a programming ace.<br />Made Exclusively for Bangaloreans.</p>
+          </div><!-- /.col-xs-12 .col-sm-3 .col-md-3 -->
+          <div class="wow zoomIn col-xs-12 col-sm-3 col-md-3">
+            <p class="footer-heading">link</p>
+            <ul class="footermenu">
+              <li><a data-scroll data-options='{ "easing": "easeInQuad" }'  href="#clean">about us</a></li>
+              <li><a data-scroll data-options='{ "easing": "easeInQuad" }'  href="#services">services</a></li>
+              <li><a data-scroll data-options='{ "easing": "easeInQuad" }'  href="#product">product</a></li>
+              <li><a data-scroll data-options='{ "easing": "easeInQuad" }'  href="#team">team</a></li>
 
-    
+            </ul>
+          </div><!-- /.col-xs-12 .col-sm-3 .col-md-3 -->
+          <div class="wow zoomIn col-xs-12 col-sm-6 col-md-3">
+            <p class="footer-heading">find us</p>
+            <ul class="footercontact">
+              <li><i class="flaticon-mainpage"></i><span>address:</span>No 32/33, GNR Complex,8th Cross,<br /> Near Wilson Garden Police Station,<br />Wilson Garden,<br /> B'lore-27</li>
+              <li><i class="flaticon-phone16"></i><span>phone:</span><a href="tel:917411674007"> +917411674007</a></li>
+              <li><i class="flaticon-email21"></i><span>e-mail:</span><a href="mailto:akil@everycrave.me"> akil@everycrave.me</a></li>
+              <!--<li><i class="flaticon-world91"></i><span>web:</span><a href="http://everycrave.me"> www.everycrave.me</a></li>-->
+            </ul>
+            <i class="flaticon-home78"></i>
+          </div><!-- /.col-xs-12 .col-sm-3 .col-md-3 -->
 
-
-
-
-
-
-
-    <!-- Footer -->
-    <footer>
-      
-        <div class="container">
-
-          <!--   <hr>
-                <div class="text-center center-block">
-
-                    <br />
-                      <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-        	            <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-        	            <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-        	            <a href="mailto:sumeru@everycrave.me"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
-        </div>
-            <hr> -->
-        </div>
-        <div class="container text-center">
-          <p> &copy; Codeville 2017</p>
-        </div>
-
-
-    </footer>
-
-    <!-- jQuery -->
-    <script src="{% static 'vendor/jquery/jquery.js' %}"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="{% static 'js/grayscale.js' %}"></script>
-
-    <script src="{% static 'js/toastr.min.js' %}"></script>
-
-    <script>
-
-    toastr.options = {
-      "positionClass": "toast-top-center"
-    }
-
-      $('#post-form').on('submit', function(event){
-         event.preventDefault();
-         name=$("#name").val();
-         email=$("#email").val();
-         phone=$("#number").val();
-         data = {'name':name, 'email':email, 'phone': phone}
-         $.ajax({
-           url: "/add/",
-           type: "POST",
-           data: data,
-           dataType: 'html',
-           success: function(response){
-            if(response == 200){
-              
-              toastr["success"]("Form submitted successfully", "Success")
-
-              $("#name").val("")
-              $("#email").val("") 
-              $("#number").val("")
-
-            }
-          },
-          error: function(e){
-            console.log(e);
-          }
-        });
-       })
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="wow zoomIn col-xs-12">
+            <p>© 2015 All rights reserved. <span>Codeville</span> theme by <a href="http://themerole.com">themerole</a></p>
+            <div class="backtop  pull-right">
+              <i class="fa fa-angle-up back-to-top"></i>
+            </div><!-- /.backtop -->
+          </div><!-- /.col-xs-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.creditwrapper -->
+  </footer><!-- /Footer -->
 
 
-    </script>
+<!-- MMENU -->
+<nav id="menu">
+  <ul>
+    <li><a href="#">home</a></li>
+    <li><a href="#clean">about us</a></li>
+    <li><a href="#services">services</a></li>
+    <li><a href="#product">product</a></li>
+    <li><a href="#team">team</a></li>
+      <ul>
+        <li><a href="blog-full-width.html">full width blog</a></li>
+        <li><a href="blog-sidebar.html">sidebar blog</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+</nav><!-- /#menu -->
+
+</div><!-- /.main -->
 
 
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-102218509-1', 'auto');
-  ga('send', 'pageview');
+<!-- jQuery JS -->
+<script src="{% static 'js/jquery-1.11.1.js' %}"></script>
 
+<!-- Modernizr JS -->
+<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+
+<!--Bootatrap JS-->
+<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+<!-- REVOLUTION Slider  -->
+<script type="text/javascript" src="{% static 'vendor/rs-plugin/js/jquery.themepunch.plugins.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/rs-plugin/js/jquery.themepunch.revolution.js' %}"></script>
+
+<!-- Shuffle JS -->
+<script src="{% static 'js/jquery.shuffle.min.js' %}"></script>
+
+<!-- mmenu -->
+<script type="text/javascript" src="{% static 'vendor/mmenu/js/jquery.mmenu.min.js' %}"></script>
+
+<!-- Owl Carosel -->
+<script src="{% static 'vendor/owl/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+
+<!-- waypoints JS-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+<!-- Counterup JS -->
+<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+
+<!-- Easing JS -->
+<script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+<!-- Smooth Scroll JS -->
+<script src="{% static 'js/scrolling-nav.js' %}"></script>
+<script src="{% static 'js/smoothscroll.min.js' %}"></script>
+
+<!-- Custom Script JS -->
+<script src="{% static 'js/script.js' %}"></script>
+
+<!-- Email JS -->
+<script src="{% static 'js/email.js' %}"></script>
+
+<script>
+$(window).on('scroll', function(){
+  if( $(window).scrollTop()>670 ){
+    $('.navbar-default').addClass('navbar-fixed-top');
+  } else {
+    $('.navbar-default').removeClass('navbar-fixed-top');
+  }
+});
 </script>
 
-
 </body>
-
 </html>

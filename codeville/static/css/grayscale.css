@@ -3,12 +3,15 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
+
+ /* Elements */
 body {
   width: 100%;
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
 }
 html {
   width: 100%;
@@ -53,6 +56,8 @@ a:focus {
   color: #1d9b6c;
 }
 
+
+/*My Fonts */
 @font-face {
   font-family: "My Font";
   src: url("Font/SF Planetary Orbiter Bold.ttf") format("truetype");
@@ -62,23 +67,12 @@ a:focus {
   src: url("Font/Insomnia/Android Insomnia Regular.ttf") format("truetype");
 }
 
-.card-header {
-  font-weight: bold;
-  font-size: 25px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-  color: white;
-}
-.light {
-  font-weight: 400;
-}
-.card {
-  margin: 30px;
-}
-.card-title {
-  margin: 0;
-}
+
+
+
+
+
+/* Nav bar */
 
 .navbar-custom {
   margin-bottom: 0;
@@ -145,57 +139,153 @@ a:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
-.intro {
-  display: table;
-  width: 100%;
-  height: 100%;
-  padding: 60px 0;
-  color: white;
-  background: url(../img/bg.jpg) no-repeat bottom center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+
+
+/* Intro Page */
+
+.container .row {
+  text-align: center;
+  align-content: center;
+}
+.container {
+  width: auto;
+  height: auto;
 }
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
   padding: 5%;
+  align-content: center;
 }
-.intro .intro-body .brand-heading {
-  margin-top: 50px;
-  font-size: 65px;
-  font-family: "My Font"
-}
-.container .row .col-md-8 {
-  text-align: center;
-}
-.container {
-  width: 100%;
-  height: auto;
-}
-.intro .intro-body .intro-text {
-  font-size: 19px;
-  text-align: center;
-}
-.intro .intro-body .intro-text-two {
-  font-size: 16px;
-  text-align: center;
-}
-.insomnia {
-  font-family: "Insomnia";
-  font-size: 25px;
+/* Smaller Mobiles */
+@media (max-width: 320px) {
+  .intro {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    color: white;
+    background: url(../img/bg.jpg) no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .intro .intro-body .brand-heading {
+    margin-top: 20px;
+    font-size: 42px;
+    font-family: "My Font"
+  }
+
+  .intro .intro-body .intro-text {
+    font-size: 18px;
+    text-align: center;
+  }
+  .intro .intro-body .intro-text-two {
+    font-size: 17px;
+    text-align: center;
+  }
+  .insomnia {
+    font-family: "Insomnia";
+    font-size: 20px;
+  }
 }
 
-/* For Desktops */
-@media (min-width: 1000px) {
+
+/* For mobiles */
+@media (min-width: 320px) {
   .intro {
+    display: table;
+    width: 100%;
     height: 100%;
-    padding: 0;
+    padding: 30px 0;
+    color: white;
+    background: url(../img/bg.jpg) no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
   }
+
   .intro .intro-body .brand-heading {
-    font-size: 115px;
+    margin-top: 30px;
+    font-size: 47px;
+    font-family: "My Font"
+  }
+
+  .intro .intro-body .intro-text {
+    font-size: 18px;
+    text-align: center;
+  }
+  .intro .intro-body .intro-text-two {
+    font-size: 16px;
+    text-align: center;
+  }
+  .insomnia {
+    font-family: "Insomnia";
+    font-size: 23px;
+  }
+}
+
+/* For larger mobiles */
+@media (min-width: 425px) {
+  .intro {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+    color: white;
+    background: url(../img/bg.jpg) no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+
+  .intro .intro-body .brand-heading {
+    margin-top: 35px;
+    font-size: 65px;
+    font-family: "My Font"
+  }
+
+  .intro .intro-body .intro-text {
+    font-size: 21px;
+    text-align: center;
+  }
+  .intro .intro-body .intro-text-two {
+    font-size: 20px;
+    text-align: center;
+  }
+  .insomnia {
+    font-family: "Insomnia";
+    font-size: 25px;
+  }
+}
+
+/* For desktops */
+@media (min-width: 768px) {
+  .intro {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+    color: white;
+    background: url(../img/bg.jpg) no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+
+  .intro .intro-body .brand-heading {
+    font-size: 100px;
     font-family: "My Font"
   }
   .intro .intro-body .intro-text-two {
@@ -211,24 +301,85 @@ a:focus {
     font-size: 40px;
   }
 }
+
+
 .abc {
   display: inline-block;
   vertical-align: middle;
 }
-.btn-circle {
-  width: 70px;
-  height: 70px;
-  margin-top: 10px;
-  padding: 7px 16px;
-  border: 2px solid white;
-  border-radius: 100% !important;
-  font-size: 40px;
-  color: white;
-  background: transparent;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
+
+/* For smaller mobiles */
+@media (max-width: 320px) {
+  .btn-circle {
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+    padding: 0 4px 10px;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+  }
 }
+
+
+/* For mobiles */
+@media (min-width: 320px) {
+  .btn-circle {
+    width: 43px;
+    height: 43px;
+    margin-top: 0;
+    padding: 0 9px;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+  }
+}
+
+/* For larger mobiles */
+@media (min-width: 425px) {
+  .btn-circle {
+    width: 50px;
+    height: 50px;
+    margin-top: 6px;
+    padding: 0 9px;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    font-size: 35px;
+    color: white;
+    background: transparent;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+  }
+}
+/* For desktops */
+@media (min-width: 768px) {
+  .btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    padding: 7px 16px;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    font-size: 40px;
+    color: white;
+    background: transparent;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+  }
+}
+
 .btn-circle:hover,
 .btn-circle:focus {
   outline: none;
@@ -279,45 +430,336 @@ a:focus {
     transform: scale(1);
   }
 }
-.content-section {
-  padding-top: 30px;
+
+
+/* About section */
+/* For smaller mobiles */
+#about {
+  color: black;
+  background-color: white;
 }
-#benefits {
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  color: white;
-  background-color: black;
-  background: url(../img/page3.jpg) no-repeat bottom center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+@media (max-width: 320px) {
+  .about {
+    padding: 0;
+    margin: 13px;
+  }
+  #about {
+    width: 100%;
+    /*background: url(../img/Bg1.jpg) no-repeat center center scroll;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: auto;
+    overflow: visible;
+    padding-bottom: 5%;
+    font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  #about h2 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Insomnia"
+  }
+
+  #about p {
+    font-size: 16px;
+  }
+  #about .row {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+/* For mobiles */
+@media (min-width: 320px) {
+  .about {
+    padding: 0;
+    margin: 14px;
+  }
+  #about {
+    width: 100%;
+    /*background: url(../img/Bg1.jpg) no-repeat center center scroll;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: auto;
+    overflow: visible;
+    padding-bottom: 5%;
+    font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  #about h2 {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Insomnia"
+  }
+
+  #about p {
+    font-size: 18px;
+  }
+  #about .row {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+/* For larger mobiles */
+@media (min-width: 425px) {
+  .about {
+    padding: 0;
+    margin: 16px;
+  }
+  #about {
+    width: 100%;
+    /*background: url(../img/Bg1.jpg) no-repeat center center scroll;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: auto;
+    overflow: visible;
+    padding-bottom: 5%;
+    font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  #about h2 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Insomnia"
+  }
+
+  #about p {
+    font-size: 20px;
+  }
+  #about .row {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+/* For desktops */
+@media (min-width: 786px) {
+  .about {
+    padding: 0;
+    margin: 20px;
+  }
+  #about {
+    width: 100%;
+    /*background: url(../img/Bg1.jpg) no-repeat center center scroll;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: auto;
+    overflow: visible;
+    padding-bottom: 5%;
+    font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  #about h2 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Insomnia"
+  }
+
+  #about p {
+    font-size: 25px;
+  }
+  #about .row {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 
 
-#map {
-  width: 100%;
-  height: 200px;F
-  margin-top: 100px;
-}
-@media (min-width: 767px) {
+/* Benefits section */
+/* for smaller mobiles */
+@media (max-width: 320px) {
+
+  /* Cards */
+  .card-header {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    color: white;
+  }
+  .light {
+    font-weight: 400;
+  }
+  .card {
+    margin: 20px;
+  }
+  .card-title {
+    margin: 0;
+  }
   .content-section {
     padding-top: 120px;
   }
+
+  #benefits h2 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Insomnia"
+  }
   #benefits {
     width: 100%;
+    /*background: url(../img/page3.jpg) no-repeat center center scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     height: auto;
   }
-  #map {
-    height: 400px;
-    margin-top: 250px;
+  #benefits p {
+    font-size: 13px;
   }
+
+}
+
+/* For mobiles */
+@media (min-width: 320px) {
+
+  /* Cards */
+  .card-header {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    color: white;
+  }
+  .light {
+    font-weight: 400;
+  }
+  .card {
+    margin: 22px;
+  }
+  .card-title {
+    margin: 0;
+  }
+
+
+  .content-section {
+    padding-top: 120px;
+  }
+
+  #benefits h2 {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Insomnia"
+  }
+  #benefits {
+    width: 100%;
+    /*background: url(../img/page3.jpg) no-repeat center center scroll;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: auto;
+  }
+  #benefits p {
+    font-size: 15px;
+  }
+
+}
+
+/* For larger mobiles */
+@media (min-width: 425px) {
+
+  /* Cards */
+  .card-header {
+    font-weight: bold;
+    font-size: 23px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    color: white;
+  }
+  .light {
+    font-weight: 400;
+  }
+  .card {
+    margin: 25px;
+  }
+  .card-title {
+    margin: 0;
+  }
+
+  .content-section {
+    padding-top: 30px;
+  }
+
+  #benefits h2 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Insomnia"
+  }
+
+  #benefits {
+    width: 100%;
+    height: auto;
+    /*background: url(../img/page3.jpg) no-repeat bottom center scroll;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+  #benefits p {
+    font-size: 17px;
+  }
+
+
+}
+
+/* For desktops */
+@media (min-width: 768px) {
+
+  /* Cards */
+  .card-header {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    color: white;
+  }
+  .light {
+    font-weight: 400;
+  }
+  .card {
+    margin: 30px;
+  }
+  .card-title {
+    margin: 0;
+  }
+
+  .content-section {
+    padding-top: 120px;
+  }
+
+  #benefits h2 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Insomnia"
+  }
+  #benefits {
+    width: 100%;
+    /*background: url(../img/page3.jpg) no-repeat center center scroll;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: auto;
+  }
+  #benefits p {
+    font-size: 20px;
+  }
+
 }
 .btn {
   text-transform: uppercase;
@@ -351,55 +793,7 @@ a:focus {
   background-position: center;
   background-size: cover;
 }
-.about {
-  padding: 0;
-  margin: 20px;
-}
-#about {
-  width: 100%;
-  background: url(../img/bg1.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  height: 100%;
-  overflow: visible;
-  padding-bottom: 5%;
-  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-}
 
-#about p {
-  font-size: 20px;
-}
-#about .row {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-
-@media (min-width: 1000px) {
-  #about {
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    height: 100%;
-    overflow: visible;
-    padding-bottom: 5%;
-    font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-  }
-
-  #about p {
-    font-size: 25px;
-  }
-  #about .row {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
 ul.banner-social-buttons {
   margin-top: 0;
 }
@@ -418,18 +812,70 @@ ul.banner-social-buttons {
     margin-bottom: 0;
   }
 }
+
+/* Register now section */
+/* for smaller mobiles */
+@media (max-width: 320px) {
+  footer p {
+    margin: 0;
+    font-size: 18px;
+  }
+  footer h2 {
+    font-size: 22px;
+  }
+
+}
+
+@media (min-width: 320px) {
+  footer p {
+    margin: 0;
+    font-size: 20px;
+  }
+  footer h2 {
+    font-size: 25px;
+  }
+
+}
+
+@media (min-width: 425px) {
+  footer p {
+    margin: 0;
+    font-size: 22px;
+  }
+  footer h2 {
+    font-size: 30px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  footer p {
+    margin: 0;
+    font-size: 25px;
+  }
+  footer h2 {
+    font-size: 40px;
+  }
+
+
+}
 footer {
   padding-bottom: 5%;
-  background: url(../img/page4.jpg) no-repeat center center scroll;
+  /*background: url(../img/page4.jpg) no-repeat center center scroll;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  height: 100%
+  height: auto;
 }
-footer p {
-  margin: 0;
+
+
+#register .row {
+  align-content: center;
+  align-items: center;
+  align-self: center;
 }
+
 ::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
@@ -502,4 +948,11 @@ body {
 
 .callout_btn:active, .callout_btn:hover{
     color: #fff;
+}
+
+
+/* Form centered */
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
