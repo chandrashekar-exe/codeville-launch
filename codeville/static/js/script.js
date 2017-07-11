@@ -290,7 +290,9 @@ $(function() {
             });
 
 
-//////// -- loader -- /////////
+//////// -- scroll to register /////////
+
+ 
 
 
 
@@ -304,3 +306,12 @@ smoothScroll.init({
       callbackBefore: function ( toggle, anchor ) {},
       callbackAfter: function ( toggle, anchor ) {}
     });
+
+
+
+function gotoRegister(){
+    $html = $('html, body');
+    $html.animate({
+        scrollTop: $('#contact').offset().top
+    });
+ }

@@ -6,12 +6,12 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>TechGut</title>
+  <title>Codeville</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
+ <!--  <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/> -->
 
   <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
@@ -234,7 +234,7 @@ style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
 </div>
 </li>
 -->
-<li class="items" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="img/slider/slider_img_02.jpg" data-delay="13000"  data-saveperformance="on">
+<li class="items" data-transition="slideleft" data-slotamount="1" data-thumb="img/slider/slider_img_02.jpg" data-delay="13000"  data-saveperformance="on">
   <!-- MAIN IMAGE -->
   <img src="{% static 'img/slider/slider_img_03.jpg' %}"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="14000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="130" data-bgpositionend="right center">
   <!-- LAYERS -->
@@ -251,7 +251,7 @@ style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
   data-splitout="chars"
   data-elementdelay="0.08"
   style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
-  <h1><span>CodeVille</span></h1>
+  <h1><span>CODEVILLE</span></h1>
 </div>
 
 <!-- LAYER NR. 2 -->
@@ -284,7 +284,7 @@ data-endelementdelay="0.1"
 data-endspeed="500"
 data-endeasing="Power4.easeIn"
 style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
-<h2  class="small-title">Get the course now!at just &#8377;999</h2>
+<h2  class="small-title">Get the course now! at just &#8377;999</h2>
 </div>
 
 <!-- LAYER NR. 4 -->
@@ -321,7 +321,7 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
 </div>
 
 <!-- LAYER NR. 5 -->
-<!--<div class="tp-caption lfr tp-resizeme"
+<div class="tp-caption lfr tp-resizeme"
 data-x="right" data-hoffset="100"
 data-y="bottom" data-voffset="-90"
 data-speed="3000"
@@ -334,8 +334,8 @@ data-endelementdelay="0.1"
 data-endspeed="500"
 data-endeasing="Power4.easeIn"
 style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
-<button type="button" class="btn btn-default buy-btn">buy now</button>
-</div>-->
+<button type="button" class="btn btn-default buy-btn" onclick="gotoRegister()">Register Now</button>
+</div>
 </li>
 <!--<li class="items" data-transition="slidevertical" data-slotamount="1" data-masterspeed="1500" data-thumb="img/slider/slider_img_03.jpg" data-delay="13000"  data-saveperformance="off">-->
   <!-- MAIN IMAGE -->
@@ -642,10 +642,10 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
     <div class="row">
       <div class="wow zoomIn col-xs-12 text-center p-padding">
         <h1 class="section-title">About Codeville</h1>
-        <p>Students get access to online and offline resources with individual mentorship to guide and help them overcome any hard obstacles that they face while learning.</p>
+        <p>Designed to make students employable. Codeville provides individual mentoring to ensure you succeed.</p>
         <div class="button-set">
           <!--<button type="button" class="btn btn-danger"><i class="fa fa-link"></i>Read More</button>-->
-          <a href="#contact" class="page-scroll contact-us"><i class="fa fa-phone"></i>Contact Us</a>
+          <a href="#contact" class="page-scroll contact-us">Register Now</a>
         </div><!-- /.button-set -->
       </div><!-- col-xs-12 -->
     </div><!-- row-->
@@ -658,6 +658,7 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
     <div class="row">
       <div class="wow zoomIn col-xs-12 text-center p-padding animated" style="visibility: visible; animation-name: zoomIn;">
         <h1 class="section-title">Live Projects</h1>
+        <p>The following live projects are available to work on right now!</p>
       </div>
     </div><!-- row -->
   </div>
@@ -754,74 +755,7 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
 
 
       <!-- portfolio-item -->
-      <div data-groups='["all", "image","wordpress", "circle", "video"]' class=" portfolio-item col-xs-12 col-sm-6 col-md-3 shuffle-item filtered " style="margin:0; padding:0;">
-        <div class="portfolio">
-          <figure class="effect-julia">
-            <img alt="img21" src="{% static 'img/portfolio03.jpg' %}">
-            <figcaption>
-              <div class="socials">
-                <a data-toggle="modal" data-target="#myModal3" href=""><i class="fa fa-expand"></i></a>
-                <a href=""><i class="fa fa-share animated"></i></a>
-              </div>
-              <div class="scoial-heading">
-                <p>LiveWire</p>
-                <strong>A Realtime communications cloud</strong>
-              </div>
-            </figcaption>
-          </figure>
-        </div><!-- /.portfolio -->
-      </div><!-- /portfolio-item -->
-      <!-- MODAL/POPUP -->
-      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class=" btn btn-default pull-right" data-dismiss="modal">X</button>
-              <span class="modal-title" id="myModalLabel">Our recent work</span>
-            </div>
-            <div class="modal-body" >
-              <img src="{% static 'img/portfolio03.jpg' %}" alt="img21"/>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- MODAL/POPUP -->
-
-
-      <!-- portfolio-item -->
-      <div data-groups='["image", "all","wordpress", "branding"]' class=" portfolio-item col-xs-12 col-sm-6 col-md-3 shuffle-item filtered " style="margin:0; padding:0;">
-        <div class="portfolio">
-          <figure class="effect-julia">
-            <img alt="img21" src="{% static 'img/portfolio04.jpg' %}">
-            <figcaption>
-              <div class="socials">
-                <a data-toggle="modal" data-target="#myModal4" href=""><i class="fa fa-expand"></i></a>
-                <a href=""><i class="fa fa-share animated"></i></a>
-              </div>
-              <div class="scoial-heading">
-                <p>LiveEnterprise</p>
-                <strong>Custom built application, Engineered to fit your requirements.</strong>
-              </div>
-            </figcaption>
-          </figure>
-        </div><!-- /.portfolio -->
-      </div><!-- /portfolio-item -->
-      <!-- MODAL/POPUP -->
-      <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class=" btn btn-default pull-right" data-dismiss="modal">X</button>
-              <span class="modal-title" id="myModalLabel">Our recent work</span>
-            </div>
-            <div class="modal-body" >
-              <img src="{% static 'img/portfolio04.jpg' %}" alt="img21"/>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- MODAL/POPUP -->
-
+      
 
 
       <!-- MODAL/POPUP -->
@@ -926,7 +860,8 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
     <div class="container">
       <div class="row">
         <div class="wow zoomIn col-xs-12 text-center p-padding">
-          <h1 class="section-title">get in touch</h1>
+          <h1 class="section-title">Register Now</h1>
+          <p>Introductory price of just INR 999/- per month (plus taxes)</p>
         </div><!-- col-xs-12 -->
         <div class="wow zoomIn col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
           <form name="contactForm" id='contact_form' method="post" action='php/email.php'>
@@ -972,7 +907,7 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
         <div class="row">
           <div class="wow zoomIn col-xs-12 col-sm-6 col-md-3">
             <a href="index.html"><h1>CodeVille</h1></a>
-            <p class="footer-content">Become a programming ace.<br />Made Exclusively for Bangaloreans.</p>
+            <p class="footer-content">Become a Programming Ace.<br />Made Exclusively for Bangaloreans.</p>
           </div><!-- /.col-xs-12 .col-sm-3 .col-md-3 -->
           <div class="wow zoomIn col-xs-12 col-sm-3 col-md-3">
             <p class="footer-heading">link</p>
@@ -987,7 +922,7 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
           <div class="wow zoomIn col-xs-12 col-sm-6 col-md-3">
             <p class="footer-heading">find us</p>
             <ul class="footercontact">
-              <li><i class="flaticon-mainpage"></i><span>address:</span>No 32/33, GNR Complex,8th Cross,<br /> Near Wilson Garden Police Station,<br />Wilson Garden,<br /> B'lore-27</li>
+              <li><i class="flaticon-mainpage"></i><span>address:</span><br />No 32/33, GNR Complex,8th Cross,<br /> Near Wilson Garden Police Station,<br />Wilson Garden,<br /> B'lore-27</li>
               <li><i class="flaticon-phone16"></i><span>phone:</span><a href="tel:917411674007"> +917411674007</a></li>
               <li><i class="flaticon-email21"></i><span>e-mail:</span><a href="mailto:akil@everycrave.me"> akil@everycrave.me</a></li>
               <!--<li><i class="flaticon-world91"></i><span>web:</span><a href="http://everycrave.me"> www.everycrave.me</a></li>-->
@@ -1018,7 +953,7 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
   <ul>
     <li><a href="#">home</a></li>
     <li><a href="#clean">about us</a></li>
-    <li><a href="#services">services</a></li>
+    <li><a href="#services">Why Us</a></li>
     <li><a href="#product">product</a></li>
     <li><a href="#team">team</a></li>
       <ul>
