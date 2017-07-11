@@ -11,8 +11,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicon -->
-  <!--  <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/> -->
-
+<<<<<<< HEAD
+ <!--  <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/> -->
+=======
+  <!-- <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/> -->
+>>>>>>> 2ed3a2ef60b02a07ab9bf002c964aac4594d76ad
 
   <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
@@ -462,13 +465,13 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
         <div id="navbar" class="navbar-collapse collapse pull-right hidden-xs">
           <ul class="nav navbar-nav navbar-right">
             <li ><a class="page-scroll" href="#home">Home</a></li>
-            <li> <a class="page-scroll" href="#services">why us</a></li>
             <li> <a class="page-scroll" href="#clean">about us</a></li>
-            <li> <a class="page-scroll" href="#product">projects</a></li>
+            <li> <a class="page-scroll" href="#services">services</a></li>
+            <li> <a class="page-scroll" href="#product">product</a></li>
             <li> <a class="page-scroll" href="#team">team</a></li>
-          <li><a class="page-scroll" href="#contact">Register</a></li>
+          <li><a class="page-scroll" href="#contact">Contact</a></li>
           <!-- Search Block -->
-          <!-- <li>
+          <li>
             <i class="search fa fa-search search-btn"></i>
             <div class="search-open" style="display:none;" >
               <div class="input-group animated fadeInDown" >
@@ -478,7 +481,7 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
                 </span>
               </div>
             </div>
-          </li> -->
+          </li>
           <!-- End Search Block -->
         </ul>
       </div><!--/.nav-collapse -->
@@ -656,8 +659,11 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
     <div class="row">
       <div class="wow zoomIn col-xs-12 text-center p-padding animated" style="visibility: visible; animation-name: zoomIn;">
         <h1 class="section-title">Live Projects</h1>
+<<<<<<< HEAD
         <p>The following live projects are available to work on right now!</p>
-
+=======
+         <p>The following live projects are available to work on right now!</p>
+>>>>>>> 2ed3a2ef60b02a07ab9bf002c964aac4594d76ad
       </div>
     </div><!-- row -->
   </div>
@@ -753,11 +759,13 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
 
 
 
+<<<<<<< HEAD
       <!-- portfolio-item -->
       
+=======
 
 
-
+>>>>>>> 2ed3a2ef60b02a07ab9bf002c964aac4594d76ad
 
 
       <!-- MODAL/POPUP -->
@@ -862,8 +870,11 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
     <div class="container">
       <div class="row">
         <div class="wow zoomIn col-xs-12 text-center p-padding">
-	<h1 class="section-title">Register now</h1>
-
+<<<<<<< HEAD
+          <h1 class="section-title">Register Now</h1>
+=======
+          <h1 class="section-title">Register now</h1>
+>>>>>>> 2ed3a2ef60b02a07ab9bf002c964aac4594d76ad
           <p>Introductory price of just INR 999/- per month (plus taxes)</p>
         </div><!-- col-xs-12 -->
 
@@ -916,9 +927,9 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
           <div class="wow zoomIn col-xs-12 col-sm-3 col-md-3">
             <p class="footer-heading">link</p>
             <ul class="footermenu">
-              <li><a data-scroll data-options='{ "easing": "easeInQuad" }'  href="#services">Why Us</a></li>
               <li><a data-scroll data-options='{ "easing": "easeInQuad" }'  href="#clean">about us</a></li>
-              <li><a data-scroll data-options='{ "easing": "easeInQuad" }'  href="#product">projects</a></li>
+              <li><a data-scroll data-options='{ "easing": "easeInQuad" }'  href="#services">services</a></li>
+              <li><a data-scroll data-options='{ "easing": "easeInQuad" }'  href="#product">product</a></li>
               <li><a data-scroll data-options='{ "easing": "easeInQuad" }'  href="#team">team</a></li>
 
             </ul>
@@ -941,7 +952,7 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
       <div class="container">
         <div class="row">
           <div class="wow zoomIn col-xs-12">
-            <p>© 2017 All rights reserved. <span>Codeville</span></p>
+            <p>© 2015 All rights reserved. <span>Codeville</span> theme by <a href="http://themerole.com">themerole</a></p>
             <div class="backtop  pull-right">
               <i class="fa fa-angle-up back-to-top"></i>
             </div><!-- /.backtop -->
