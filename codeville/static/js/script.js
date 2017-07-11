@@ -165,8 +165,8 @@ $(window).scroll(function(){
 //Rs-PLUGIN
 jQuery(document).ready(function() {
 
-
-
+    setTimeout(function(){ $('.loader').fadeOut(); }, 500);
+    
                     jQuery('.tp-banner').show().revolution(
                     {
                         dottedOverlay:"none",
@@ -243,7 +243,7 @@ jQuery(document).ready(function() {
                     });
 
 
-                    setTimeout(function(){ $('.loader').fadeOut(); }, 500);
+                    
 
 
                 });
