@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicon -->
-  <!--  <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/> -->
+   <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
 
 
   <!-- Google Fonts -->
@@ -248,11 +248,13 @@ style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
   data-speed="600"
   data-start="500"
   data-easing="Power3.easeInOut"
-  data-splitin="chars"
-  data-splitout="chars"
+  
   data-elementdelay="0.08"
   style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
-  <h1><span>CODEVILLE</span></h1>
+  <!-- <h1><span>CODEVILLE</span></h1> -->
+  <img src="{% static 'img/logo.png' %}">
+
+  
 </div>
 
 <!-- LAYER NR. 2 -->
@@ -457,7 +459,7 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
               <span class="icon-bar"></span>
             </button>
           </a>
-          <a class="navbar-brand" href="index.html"><h1>CodeVille</h1></a>
+          <a class="navbar-brand" href="index.html"><h1><img src="{% static 'img/navbar-logo.png' %}"  alt="Nav Bar Logo"></h1></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse pull-right hidden-xs">
           <ul class="nav navbar-nav navbar-right">
@@ -686,7 +688,7 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
       <div data-groups='["all", "image", "video"]' class=" portfolio-item col-xs-12 col-sm-6 col-md-4 shuffle-item filtered animated" style="margin:0; padding:0;">
         <div class="portfolio">
           <figure class="effect-julia">
-            <img alt="img21" src="{% static 'img/portfolio01.jpg' %}">
+            <img alt="img21" src="{% static 'img/giveaway.png' %}">
             <figcaption>
               <div class="socials">
                 <a data-toggle="modal" data-target="#myModal1" href=""><i class="fa fa-expand"></i></a>
@@ -721,7 +723,7 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
       <div data-groups='["all", "image","wordpress","branding"]' class=" portfolio-item col-xs-12 col-sm-6 col-md-4 shuffle-item filtered " style="margin:0; padding:0;">
         <div class="portfolio">
           <figure class="effect-julia">
-            <img alt="img21" src="{% static 'img/portfolio02.jpg' %}">
+            <img alt="img21" src="{% static 'img/bikeshare.png' %}">
             <figcaption>
               <div class="socials">
                 <a data-toggle="modal" data-target="#myModal2" href=""><i class="fa fa-expand"></i></a>
@@ -782,9 +784,10 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
             <figcaption>
               <div class="icon-holder">
                 <ul >
-                  <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://github.com/chandrashekar-exe" target="_blank"><i class="fa fa-github "></i></a></li>
+                  <li><a href="https://facebook.com/chandrashekar.s.96" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <!-- 
+                  <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li> -->
                 </ul>
               </div>
             </figcaption>
@@ -802,9 +805,10 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
             <figcaption>
               <div class="icon-holder">
                 <ul >
-                  <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://github.com/lordlezehaf" target="_blank"><i class="fa fa-github "></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/ashika-manjunath/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                  <!-- <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li> -->
                 </ul>
               </div>
             </figcaption>
@@ -910,7 +914,7 @@ style="z-index: 3; max-width: 50px; max-height: 50px; white-space: nowrap;">
       <div class="container">
         <div class="row">
           <div class="wow zoomIn col-xs-12 col-sm-6 col-md-3">
-            <a href="index.html"><h1>CodeVille</h1></a>
+            <a href="index.html"><h1><img src="{% static 'img/navbar-logo.png' %}" alt="Codeville logo"></h1></a>
             <p class="footer-content">Become a Programming Ace.<br />Made Exclusively for Bangaloreans.</p>
           </div><!-- /.col-xs-12 .col-sm-3 .col-md-3 -->
           <div class="wow zoomIn col-xs-12 col-sm-3 col-md-3">

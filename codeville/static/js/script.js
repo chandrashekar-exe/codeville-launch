@@ -190,8 +190,7 @@ jQuery(document).ready(function() {
                         swipe_min_touches: 1,
                         swipe_max_touches: 1,
                         drag_block_vertical: false,
-
-                                                parallax:"mouse",
+                        parallax:"mouse",
                         parallaxBgFreeze:"on",
                         parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
 
