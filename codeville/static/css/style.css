@@ -2234,3 +2234,10 @@ transition          : all ease 200ms;
 .normal_cursor{
     cursor:default !important;
 }
+
+
+@media only screen and (max-width: 500px) {
+    .image-tech{
+        width: 50% !important;
+    }
+}
